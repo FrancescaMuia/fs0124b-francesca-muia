@@ -48,18 +48,19 @@ h2{
 }
 
 .section-under-video{
-  padding: 40px 0;
-}
-
-.no-number{
-  list-style: none;
-  padding-top: 10px;
-  padding-left: 10px;
+  padding-left: 1rem;
+  border-left: 1px solid yellow;
+  margin-top: 2rem;
 }
 
 .title-under-video{
   color: red;
   text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.featured-link{
+  margin-top: 0;
 }
 
 .link{
@@ -72,4 +73,13 @@ h2{
 
 .lista li{
   line-height: 2;
+}
+
+ol li {
+  font-weight: 700;
+}
+
+.video{
+  border-radius: 10px;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
 }
