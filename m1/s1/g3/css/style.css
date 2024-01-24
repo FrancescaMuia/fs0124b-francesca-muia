@@ -1,0 +1,75 @@
+body{
+  margin: 0;
+}
+
+nav{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.logo{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.nav-title{
+  display: flex;
+  justify-content: center;
+  background-color: #fdfbf1;
+  color: #107777;
+  border-top: 2px solid yellow;
+}
+
+p span{
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+main{
+  padding: 40px 0;
+}
+
+article{
+  width: 50%;
+  margin: auto;
+}
+
+h1{
+  text-align: center;
+  font-size: 2rem;
+}
+
+h2{
+  border-bottom: 4px solid aliceblue;
+  padding-bottom: 30px;
+}
+
+.section-under-video{
+  padding: 40px 0;
+}
+
+.no-number{
+  list-style: none;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.title-under-video{
+  color: red;
+  text-transform: uppercase;
+}
+
+.link{
+  color: #107777;
+}
+
+.link.capital{
+  text-transform: capitalize;
+}
+
+.lista li{
+  line-height: 2;
+}
