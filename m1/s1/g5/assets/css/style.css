@@ -139,3 +139,42 @@ img{
   margin: 10px 0;
 }
 
+/*FOOTER*/
+
+#footer{
+  background-color: #25a2c3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+}
+
+#address{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#address a,
+#address p{
+  color: #c8e7f0;
+}
+
+.indirizzo{
+  margin: 0;
+}
+
+.line{
+  border-bottom: 1px solid #fff;
+}
+
+.copyright{
+  color: #c8e7f0;
+  border-top: 1px solid #fff;
+  padding-top: 40px;
+}
+
+.copyright a{
+  color: #c8e7f0;
+}
