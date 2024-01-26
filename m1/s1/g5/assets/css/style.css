@@ -1,0 +1,63 @@
+/* Your styles here */
+/*GENERAL*/
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  color: #393d41;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3{
+  font-family: 'Montserrat', sans-serif;
+  color: #25a2c3;
+  line-height: 1.5;
+}
+
+h1{
+  font-size: 2rem;
+}
+
+p{
+  margin: 10px 0;
+}
+
+.titolo{
+  margin: 10px 0;
+}
+
+/*HEADER*/
+
+#header{
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  padding: 30px;
+}
+
+.img{
+  width: auto;
+  height: 3rem;
+}
+
+/*MAIN*/
+
+.intro{
+  text-align: center;
+}
+
+.intro-parag{
+  margin: 20px 0 40px 0;
+}
+
+.button{
+  background-color: #f04c2f;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  padding: 10px 30px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: #fff;
+}
