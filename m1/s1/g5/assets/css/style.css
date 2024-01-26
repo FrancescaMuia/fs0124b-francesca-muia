@@ -70,10 +70,14 @@ img{
   background-color: #f04c2f;
   font-family: 'Montserrat', sans-serif;
   text-decoration: none;
-  padding: 10px 30px;
+  padding: 20px 40px;
   border-radius: 5px;
   text-transform: uppercase;
   color: #fff;
+}
+
+.btn-container{
+  margin: 60px 0 20px 0;
 }
 
 .main-content{
@@ -87,6 +91,8 @@ img{
 .img-pc{
   border-radius: 50%;
   margin: 30px 0;
+  height: 300px;
+  width: auto;
 }
 
 .orange-box{
