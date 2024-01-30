@@ -217,3 +217,6 @@ array.pop();
 console.log(array);
 array.push(100);
 console.log(array);
+
+array.splice(9, 10, 100);
+console.log(array);
