@@ -13,6 +13,18 @@ if (a > b) {
   console.log("nessuno");
 }
 
+/*
+oppure
+
+if (a > b) {
+  console.log("il più grande è " + a);
+} else if (a < b) {
+  console.log("il più grande è " + b);
+} else {
+  console.log("i numeri sono uguali");
+}
+*/
+
 /* ESERCIZIO 2
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
 */
@@ -25,6 +37,13 @@ if (numeroIntero === 5) {
   console.log("not equal");
 }
 
+/*
+oppure
+
+let x = 8;
+if(x !== 5) console.log('not equal');
+*/
+
 /* ESERCIZIO 3
   Scrivi un algoritmo che mostri "divisibile per 5" in console se un numero fornito è perfettamente divisibile per 5 (suggerimento: usa l'operatore modulo)
 */
@@ -36,6 +55,16 @@ if (numeroDivisibile % 5 === 0) {
 } else {
   console.log("non divisibile");
 }
+
+/*
+oppure
+
+let x2 = 15
+
+if (x2 % 5 === 0) {
+  console.log('divisibile per 5')
+}
+*/
 
 /* ESERCIZIO 4
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
@@ -74,6 +103,17 @@ if (n1 === 8 || n2 === 8) {
   console.log("niente è valido");
 }
 
+/*
+oppure
+
+let n1 = 10;
+let n2 = 4;
+
+if(n1 === 8 || n2 === 8 || (n1 + n2) === 8 || (n1 - n2) === 8) || (n2 - n1 === 8){
+  console.log('verificato');
+}
+*/
+
 /* ESERCIZIO 5
   Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
   C'è una promozione in corso: se il totale del carrello supera 50, l'utente ha diritto alla spedizione gratuita (altrimenti la spedizione ha un costo fisso pari a 10).
@@ -89,6 +129,20 @@ if (n1 === 8 || n2 === 8) {
     console.log(totalShoppingCart + 10);
   }
 }
+
+/*
+oppure
+
+let totalShoppingCart = 65
+let shippingCost = 10
+let amountToPay = totalShoppingCart
+
+if (totalShoppingCart < 50) {
+  amountToPay += shippingCost
+}
+
+console.log('Totale da pagare:', amountToPay)
+*/
 
 /* ESERCIZIO 6
   Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
@@ -106,6 +160,21 @@ if (n1 === 8 || n2 === 8) {
   }
 }
 
+/*
+oppure
+
+let totalShoppingCart2 = 65
+totalShoppingCart2 = totalShoppingCart2 * 0.8
+let shippingCost2 = 10
+let amountToPay2 = totalShoppingCart2
+
+if (totalShoppingCart2 < 50) {
+  amountToPay2 += shippingCost2
+}
+
+console.log('Totale da pagare:', amountToPay2)
+*/
+
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
   Utilizzando un blocco condizionale, crea un algoritmo per ordinarle secondo il loro valore, dal più alto al più basso.
@@ -113,8 +182,30 @@ if (n1 === 8 || n2 === 8) {
 */
 
 let valore1 = 2;
-let valore2 = 10;
-let valore3 = 30;
+let valore2 = 30;
+let valore3 = 10;
+
+if (valore1 >= valore2) {
+  if (valore3 >= valore1) {
+    console.log(valore3, valore1, valore2);
+  } else {
+    if (valore3 >= valore2) {
+      console.log(valore1, valore3, valore2);
+    } else {
+      console.log(valore1, valore2, valore3);
+    }
+  }
+} else {
+  if (valore3 >= valore2) {
+    console.log(valore3, valore2, valore1);
+  } else {
+    if (valore3 >= valore1) {
+      console.log(valore2, valore3, valore1);
+    } else {
+      console.log(valore2, valore1, valore3);
+    }
+  }
+}
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
@@ -173,6 +264,19 @@ if (val < 10 && val > 5) {
   console.log("Uguale a 10 o maggiore");
 }
 
+/*
+oppure
+
+let val = 7
+if (val < 5) {
+  console.log('Meno di 5')
+} else if (val < 10) {
+  console.log('Meno di 10')
+} else {
+  console.log('Uguale a 10 o maggiore')
+}
+*/
+
 /* ESERCIZIO 11
   Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
 */
@@ -220,3 +324,10 @@ console.log(array);
 
 array.splice(-1, 1, 100);
 console.log(array);
+
+/*
+oppure
+
+myArray[9] = 100
+console.log(myArray)
+*/
