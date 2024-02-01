@@ -54,6 +54,16 @@ console.log(boundary(50));
  ritornare la stringa originale senza alterarla.
 */
 
+const epify = function (str) {
+  if (str.startsWith("EPICODE")) {
+    return str;
+  } else {
+    return "EPICODE " + str;
+  }
+};
+console.log(epify("EPICODERS")); // EPICODERS
+console.log(epify("Hello")); // EPICODE Hello
+
 /* ESERCIZIO 6
  Scrivi una funzione di nome "check3and7" che accetta un numero positivo come parametro. La funzione deve controllare che il parametro sia un multiplo
  di 3 o di 7. (Suggerimento: usa l'operatore modulo)
@@ -80,28 +90,37 @@ reverseString("EPICODE");
  La funzione deve rendere maiuscola la prima lettera di ogni parola contenuta nella stringa.
 */
 
-/*function upperFirst(str) {
+function upperFirst(str) {
   let parole = str.split(" ");
+  let risultato = [];
   for (let i = 0; i < parole.length; i++) {
-    let parola = parole[i];
-    if (parola > 0) {
-      parole[i] = parole[0].toUpperCase() + parole.slice(1);
-    }
+    let primaLettera = parole[i][0].toUpperCase();
+    let restoParola = parole[i].slice(1);
+    let parolaCompleta = primaLettera + restoParola;
+
+    risultato.push(parolaCompleta);
   }
-  return parole.join(" ");
+  return risultato.join(" ");
 }
-let upperFirst = "ciao a tutti";
-console.log(upperFirst);*/
+console.log(upperFirst("ciao a tutti"));
 
 /* ESERCIZIO 9
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
  della stringa originale.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+const cutString = function (str) {
+  return str.slice(1, str.length - 1);
+};
+console.log(cutString("EPICODE"));
 
 /* ESERCIZIO 10
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+function giveMeRandom(n) {
+  let nRandom = [];
+  for (let i = 0; i < n; i++) nRandom.push(Math.floor(Math.random() * 11));
+  return nRandom;
+}
+console.log(giveMeRandom(3));

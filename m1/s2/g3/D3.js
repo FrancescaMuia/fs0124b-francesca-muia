@@ -231,7 +231,41 @@ console.log(starWarsCharacters);
   Utilizzando gli elementi presenti nell'array "femaleCharacters" rimuovi dall'array "charactersNames" le stringhe corrispondenti a personaggi con lo stesso nome.
   Una volta fatto crea un console.log per controllare la proprietà length di "charactersNames" prima e dopo l'operazione.
 */
+console.log("CHARACTERS BEFORE", characters.length);
+
+for (let i = 0; i < characters.length; i++) {
+  const character = characters[i];
+
+  for (let j = 0; j < femaleCharacters.length; j++) {
+    const femCharacter = femaleCharacters[j];
+
+    if (femCharacter.name === character) {
+      console.log("FEMALE", character);
+      characters.splice(i, 1);
+    }
+  }
+}
+
+console.log("CHARACTERS AFTER", characters.length);
 
 /* --EXTRA-- ESERCIZIO 10
   Crea una funzionalità che selezioni un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo (a tuo piacimento).
 */
+const randomIndex = Math.floor(Math.random() * starWarsCharacters.length);
+const selectedCharacter = starWarsCharacters[randomIndex];
+
+console.log("The found character name is:", selectedCharacter.name);
+
+if (selectedCharacter.gender === "female") {
+  console.log("She is", selectedCharacter.height, "cm tall");
+} else {
+  console.log("He is", selectedCharacter.height, "cm tall");
+}
+
+if (selectedCharacter.hair_color !== "n/a" && selectedCharacter.hair_color !== "none") {
+  console.log("and has", selectedCharacter.hair_color, "hair,");
+} else {
+  console.log("and bald,");
+}
+
+console.log("with", selectedCharacter.skin_color, "skin.");
