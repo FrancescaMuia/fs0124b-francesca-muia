@@ -1,0 +1,14 @@
+/* Your styles here */
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.content-logo{
+  background-color: #222f3f;
+  padding: 10px;
+}
+
+.img{
+  height: 3rem;
+}
