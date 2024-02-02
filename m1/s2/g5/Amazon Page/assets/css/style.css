@@ -94,6 +94,11 @@ h3 a{
   flex-direction: column;
 }
 
+.content-titoli{
+  display: flex;
+  flex-direction: row;
+}
+
 .quattro-img {
   display: flex;
   justify-content: space-between;
