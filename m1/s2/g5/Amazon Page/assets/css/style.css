@@ -91,15 +91,23 @@ h3 a{
   margin: 20px;
   padding: 10px;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .quattro-img {
   display: flex;
+  justify-content: space-between;
   margin: 10px 0;
 }
 
+.content-quattro-img{
+  margin: 0 10px;
+}
+
 .img-quattro{
-  width: 10rem;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 5px 10px 5px rgba(0, 0, 0, 9%);
 }
 
 .section-big{
