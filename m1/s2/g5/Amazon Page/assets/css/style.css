@@ -99,6 +99,10 @@ h3 a{
   flex-direction: row;
 }
 
+.content-titoli .divide{
+  padding-left: 10px;
+}
+
 .quattro-img {
   display: flex;
   justify-content: space-between;
