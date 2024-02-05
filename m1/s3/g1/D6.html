@@ -124,12 +124,17 @@
         link.setAttribute('href', 'https://www.google.com')
       }
       changeUrls();
-      
+
       /* ESERCIZIO 5
        Scrivi una funzione che aggiunga un nuovo elemento lista alla seconda lista non ordinata
     */
 
-      const addToTheSecond = function () {}
+      const addToTheSecond = function () {
+        let list = document.createElement('li');
+        let newElList= document.querySelector('#secondList').appendChild(list);
+
+      }
+      addToTheSecond();
 
       /* ESERCIZIO 6
        Scrivi una funzione che aggiunga un paragrafo al primo div
