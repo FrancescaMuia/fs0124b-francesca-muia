@@ -120,6 +120,9 @@
       */
 
       const changeUrls = function () {
+        //altro modo
+        //let link = document.querySelector('a:not(footer a)');
+        //links.forEach(l => l.href ='https://www.google.com')
         let link = document.querySelector('a');
         link.setAttribute('href', 'https://www.google.com')
       }
@@ -172,13 +175,28 @@
        Scrivi una funzione che rimuova l'ultima lettera dall'h1 ogni volta che l'utente lo clicca
       */
 
-      const makeItClickable = function () {}
+      const makeItClickable = function () {
+        let testo = document.querySelector('h1');
+        testo.addEventListener('click', function(){
+          let testoH1 = testo.textContent;
+          let testoModificato = testoH1.slice(0, -1);
+          testo.textContent = testoModificato
+        })
+      }
+      makeItClickable();
 
       /* ESERCIZIO 10
        Crea una funzione che, al click sul footer, riveli l'URL del link interno come contenuto di un alert()
       */
 
-      const revealFooterLink = function () {}
+      const revealFooterLink = function () {
+        let footer = document.querySelector('footer');
+        footer.addEventListener('click', function(){
+          let link = footer.querySelector('a').href;
+          alert(link);
+        })
+      }
+      revealFooterLink();
 
       /* ESERCIZIO 11
        Crea una funzione che crei una tabella nell'elemento con id "tableArea". 
@@ -203,7 +221,13 @@
       Crea una funzione che cambi il colore del h2 con id "changeMyColor" con un colore random ad ogni click ricevuto
     */
 
-      const changeColorWithRandom = function () {}
+      const changeColorWithRandom = function () {
+        let h2 = document.querySelector('#changeMyColor');
+        h2.addEventListener('click', function(){
+          h2.style.color = "#" + Math.floor(Math.random() * 16777215).toString(16);
+        })
+      }
+      changeColorWithRandom();
     </script>
   </body>
 </html>
