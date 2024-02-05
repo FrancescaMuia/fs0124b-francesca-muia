@@ -119,8 +119,12 @@
        Scrivi una funzione che cambi la proprietà href di ogni link (tranne quello nel footer) con il valore https://www.google.com
       */
 
-      const changeUrls = function () {}
-
+      const changeUrls = function () {
+        let link = document.querySelector('a');
+        link.setAttribute('href', 'https://www.google.com')
+      }
+      changeUrls();
+      
       /* ESERCIZIO 5
        Scrivi una funzione che aggiunga un nuovo elemento lista alla seconda lista non ordinata
     */
