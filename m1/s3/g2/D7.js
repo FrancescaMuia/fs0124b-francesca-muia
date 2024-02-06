@@ -72,8 +72,8 @@ function sum() {
 let secondoArray = sum(numeri3);
 console.log(secondoArray);
 
-let arr2 = numeri3.map((n) => n + 2);
-console.log(arr2);
+/*let arr2 = numeri3.map((n) => n + 2);
+console.log(arr2);*/
 
 /* ESERCIZIO 7 (map)
   Scrivi una funzione che, dato un array di stringhe, ritorni un nuovo array contenente le lunghezze delle rispettive stringhe dell'array di partenza
@@ -83,6 +83,16 @@ console.log(arr2);
 /* ESERCIZIO 8 (forEach o for)
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
 */
+
+function arrDispari() {
+  let array = [];
+  for (let i = 1; i < 99; i += 2) {
+    array.push(i);
+  }
+  return array;
+}
+let dispari = arrDispari();
+console.log(dispari);
 
 /* Questo array di film verrà usato negli esercizi a seguire. Non modificarlo e scorri oltre per riprendere gli esercizi :) */
 const movies = [
