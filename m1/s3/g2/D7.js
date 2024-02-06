@@ -12,6 +12,12 @@ function unione(string1, string2) {
 }
 unione("ciao", "mondo");
 
+const concatString = (str1, str2) => {
+  return str1.slice(0, 2).concat(str2.slice(str2.length - 3));
+};
+
+console.log(concatString("ciao", "mondo"));
+
 /* ESERCIZIO 2 (for)
   Scrivi una funzione che torni un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
 */
@@ -19,35 +25,48 @@ unione("ciao", "mondo");
 function arrayRandom() {
   let array = [];
   for (let index = 0; index < 10; index++) {
-    array.push(Math.floor(Math.random()));
-    console.log(array);
+    array.push(Math.floor(Math.random() * 101));
   }
 
   return array;
 }
+console.log(arrayRandom());
 
 /* ESERCIZIO 3 (filter)
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici
 */
 
-function pari() {}
+function pari() {
+  let numeri = [5, 2, 4, 9];
 
+  let nPari = numeri.filter((n) => {
+    return n % 2 === 0;
+  });
+  return nPari;
+}
+
+console.log(pari());
 /* ESERCIZIO 4 (forEach)
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
 
-let numeri = [2, 4, 6, 8];
-let somma = 0;
+function somma() {
+  let numeri = [2, 4, 6, 8];
+  let somma = 0;
 
-numeri.forEach((numero) => {
-  somma += numero;
-  console.log(somma);
-});
+  numeri.forEach((numero) => {
+    somma += numero;
+  });
+  return somma;
+}
+
+console.log(somma());
 
 /* ESERCIZIO 5 (reduce)
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
 
+/*
 let numeri2 = [1, 2, 3, 4];
 let somma2 = calcolaSum(numeri2);
 function calcolaSum() {
@@ -55,6 +74,13 @@ function calcolaSum() {
   return somma;
 }
 console.log(somma2);
+*/
+
+const calcolaSomma = (array) => {
+  return array.reduce((tot, curr) => tot + curr, 0);
+};
+
+console.log(calcolaSomma([1, 2, 3, 4, 5]));
 
 /*let somma2 = numeri2.reduce((tot, curr) => tot + curr, 0);
 console.log(somma2);*/
@@ -79,6 +105,12 @@ console.log(arr2);*/
   Scrivi una funzione che, dato un array di stringhe, ritorni un nuovo array contenente le lunghezze delle rispettive stringhe dell'array di partenza
   es.: ["EPICODE", "is", "great"] => [7, 2, 5]
 */
+
+function stringhe(arrayStringhe) {
+  let nuovoArray = arrayStringhe.map((stringa) => stringa.length);
+  return nuovoArray;
+}
+console.log(stringhe(["EPICODE", "is", "great"]));
 
 /* ESERCIZIO 8 (forEach o for)
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
@@ -199,6 +231,20 @@ const movies = [
 /* ESERCIZIO 9 (forEach)
   Scrivi una funzione per trovare il film più vecchio nell'array fornito.
 */
+
+function ciclFilmVecchio(arrayFilm) {
+  let filmVecchio = arrayFilm[0];
+
+  arrayFilm.forEach(function (movie) {
+    if (parseInt(movie.Year) < parseInt(filmVecchio.Year)) {
+      filmVecchio = movie;
+    }
+  });
+  return filmVecchio;
+}
+
+let filmVecchio = ciclFilmVecchio(movies);
+console.log(filmVecchio);
 
 /* ESERCIZIO 10
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
