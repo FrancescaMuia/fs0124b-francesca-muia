@@ -14,9 +14,11 @@ for (let i = 1; i <= 76; i++) {
 }
 
 const btnEstrai = document.querySelector(".btn-estrai");
+btnEstrai.addEventListener("click", function () {
+  let randomNumberSaved = randomNumber(1, 76);
+  document.querySelector(".nEstratto").append(randomNumberSaved);
+});
 
 function randomNumber(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
-let randomNumberSaved = randomNumber(1, 76);
-console.log(randomNumberSaved);
