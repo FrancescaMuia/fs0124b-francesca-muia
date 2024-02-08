@@ -12,3 +12,11 @@ for (let i = 1; i <= 76; i++) {
   //appendo le caselle al contenitore per vederle
   numeriCaselle.append(numbers);
 }
+
+const btnEstrai = document.querySelector(".btn-estrai");
+
+function randomNumber(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+let randomNumberSaved = randomNumber(1, 76);
+console.log(randomNumberSaved);
