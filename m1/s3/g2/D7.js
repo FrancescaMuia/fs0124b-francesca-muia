@@ -250,22 +250,72 @@ console.log(filmVecchio);
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
 */
 
+const countMovies = (array) => {
+  return array.length;
+};
+
+console.log(countMovies(movies));
+
 /* ESERCIZIO 11 (map)
   Scrivi una funzione per creare un array con solamente i titoli dei film contenuti nell'array fornito.
 */
+
+function onlyTitles(array) {
+  return array.map(function (film) {
+    return film.Title;
+  });
+}
+
+console.log(onlyTitles(movies));
 
 /* ESERCIZIO 12 (filter)
   Scrivi una funzione per ottenere dall'array fornito solamente i film usciti nel millennio corrente.
 */
 
+const onlyInThisMillennium = (array) => {
+  return array.filter((movie) => {
+    return parseInt(movie.Year) > 1999;
+  });
+};
+
+console.log(onlyInThisMillennium(movies));
+
 /* ESERCIZIO 13 (reduce)
   Scrivi una funzione per calcolare la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array fornito.
 */
+
+function sumAllTheYears(array) {
+  return array.reduce(function (acc, curr) {
+    return acc + parseInt(curr.Year);
+  }, 0);
+}
+
+console.log(sumAllTheYears(movies));
+
+/*const sumAllTheYears = (array) => {
+  return array.reduce((acc, curr) => acc + parseInt(curr.Year), 0);
+};
+
+console.log(sumAllTheYears(movies));*/
 
 /* ESERCIZIO 14 (find)
   Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
 */
 
+function getMovieById(array, id) {
+  return array.find(function (f) {
+    return f.imdbID === id;
+  });
+}
+
+console.log(getMovieById(movies, "tt0355702"));
+
 /* ESERCIZIO 15 (findIndex)
   Scrivi una funzione per ottenere dall'array fornito l'indice del primo film uscito nell'anno fornito come parametro.
 */
+
+const getMovieByYear = function (array, year) {
+  return array.findIndex((elem) => parseInt(elem.Year) === year);
+};
+
+console.log(getMovieByYear(movies, 2012));
