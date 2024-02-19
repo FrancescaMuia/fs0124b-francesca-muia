@@ -230,13 +230,37 @@ footer a {
     }
 }
 
-@media screen and (min-width:1200) {
+@media screen and (min-width:1200px) {
     .content-logo {
         display: flex;
         align-items: center;
     }
 
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .content {
+        margin: 5em 0;
+    }
+
+    table {
+        max-width: 1200px;
+        width: 60%;
+    }
+
     .content-video {
         display: flex;
+    }
+
+    aside{
+        display: flex;
+    }
+
+    aside > div{
+        flex: 1;
+        margin-right: 10px;
     }
 }
