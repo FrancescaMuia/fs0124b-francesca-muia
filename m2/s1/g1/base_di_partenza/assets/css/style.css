@@ -242,6 +242,14 @@ footer a {
         align-items: center;
     }
 
+    header div img{
+        margin-bottom: 0;
+    }
+
+    .content-logo > p{
+        margin-bottom: 0;
+    }
+
     .content {
         margin: 5em 0;
     }
@@ -255,12 +263,29 @@ footer a {
         display: flex;
     }
 
-    aside{
-        display: flex;
+    .content-video iframe,
+    .content-video section{
+        flex-basis: 50%;
+        /* width: 50%;  è la stessa cosa di sopra*/
     }
 
-    aside > div{
-        flex: 1;
-        margin-right: 10px;
+    .content-video section{
+        border-radius: 20px;
+        padding: 2em 1em;
+    }
+
+    .content-articles{
+        display: flex;
+        padding: 0;
+        width: 100%;
+        margin: 0;
+    }
+
+    .content-articles div{
+        width: calc(100%/3);
+    }
+
+    aside div{
+        margin-bottom: 0;
     }
 }
