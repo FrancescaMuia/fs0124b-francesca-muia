@@ -429,7 +429,7 @@ footer a {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.fa-calendar-alt,
+.icon-calendar,
 .fa-plus-square {
   font-size: 25px;
   background-color: rgba(255,255,255,0.8);
@@ -450,6 +450,17 @@ i.fas.fa-tag {
   top: 10px;
   font-size: 30px;
   color: #bfbfbf;
+}
+
+.content-underline{
+  position: relative;
+}
+
+.underline{
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
 }
 
 @media screen and (min-width: 700px) {
