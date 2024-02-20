@@ -461,6 +461,7 @@ i.fas.fa-tag {
   bottom: -10px;
   left: 0;
   width: 100%;
+  opacity: 0.5;
 }
 
 @media screen and (min-width: 700px) {
