@@ -1,3 +1,36 @@
 .navbar{
   background-color: #fbf7e3;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  border-radius: 50px;
+}
+
+.container-link {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.nav-link{
+  font-size: 20px;
+  color: #612910;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 50px;
+  background-color: #f3df85;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+
+.shop {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-weight: 700;
+    text-transform: uppercase;
+}
+
+.bee{
+  height: 50px;
 }
