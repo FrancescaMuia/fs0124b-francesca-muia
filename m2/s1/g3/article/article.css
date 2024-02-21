@@ -1,0 +1,24 @@
+.container-article{
+  background-color: #fbf7e3;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  padding: 20px;
+  gap: 30px;
+  font-family: "Roboto", sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  .container-article{
+    flex-direction: column-reverse;
+  }
+
+  .container-img {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+.container-img img{
+  width: 100%;
+}
+}
