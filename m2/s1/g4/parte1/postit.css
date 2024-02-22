@@ -15,6 +15,7 @@ p {
   justify-content: center;
   padding-top: 40px;
   perspective: 1000px;
+  transform-style: preserve-3d;
 }
 
 .postit{
@@ -26,19 +27,19 @@ p {
   flex-direction: column;
   align-items: center;
   box-shadow:10px 10px 7px rgba(0,0,0,.2);
-  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23),rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
   animation-name: cascata;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
 
   
-  top: 0;
+  /* top: 0;
   left: 50%;
   transform: translateY(-100%) translateZ(-500px) rotateX(-90deg); 
 
   transition-property: transform, z-index;
   transition-duration: 1s;
-  transition-timing-function: ease-in-out; 
+  transition-timing-function: ease-in-out;  */
 }
 
 .postit:nth-child(1),
@@ -66,6 +67,7 @@ p {
 }
 
 .postit:hover{
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22), rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
   transform: scale(1.25);
   z-index:5;
   transition-duration: 1s;
@@ -73,10 +75,11 @@ p {
 }
 
 @keyframes cascata {
-  from{
+  /* from{
     transform: translateY(-100%) translateZ(1000px) rotateX(-90deg);
   }
   to{
     transform: translateY(0) translateZ(0) rotateX(0deg);
-  }
+  } */
+  from {transform: scale(100,100) rotate(30deg);}
 }
