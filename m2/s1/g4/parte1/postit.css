@@ -35,11 +35,11 @@ p {
   
   /* top: 0;
   left: 50%;
-  transform: translateY(-100%) translateZ(-500px) rotateX(-90deg); 
+  transform: translateY(-100%) translateZ(-500px) rotateX(-90deg);  */
 
   transition-property: transform, z-index;
   transition-duration: 1s;
-  transition-timing-function: ease-in-out;  */
+  transition-timing-function: ease-in-out;
 }
 
 .postit:nth-child(1),
