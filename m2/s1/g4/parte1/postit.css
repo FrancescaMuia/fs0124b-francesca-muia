@@ -18,6 +18,7 @@ p {
 }
 
 .postit{
+  font-family: "Indie Flower", cursive;
   height: 200px;
   width: 300px;
   display: flex;
@@ -25,19 +26,32 @@ p {
   flex-direction: column;
   align-items: center;
   box-shadow:10px 10px 7px rgba(0,0,0,.2);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+  animation-name: cascata;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+
+  
+  top: 0;
+  left: 50%;
+  transform: translateY(-100%) translateZ(-500px) rotateX(-90deg); 
+
+  transition-property: transform, z-index;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out; 
 }
 
 .postit:nth-child(1),
 .postit:nth-child(5),
 .postit:nth-child(7){
-  background-color: yellow;
+  background-color: #fafbc9;
   transform: rotate(-3deg);
 }
 
 .postit:nth-child(2),
 .postit:nth-child(4),
 .postit:nth-child(8){
-  background-color: green;
+  background-color: #c8f9c9;
   transform: rotate(5deg);
 }
 
@@ -47,13 +61,12 @@ p {
 
 .postit:nth-child(3),
 .postit:nth-child(6){
-  background-color: purple;
+  background-color: #c7c7f1;
   transform: rotate(-5deg);
 }
 
 .postit:hover{
   transform: scale(1.25);
-  /* position:relative; */
   z-index:5;
   transition-duration: 1s;
   transition-timing-function: ease-in-out;
@@ -66,15 +79,4 @@ p {
   to{
     transform: translateY(0) translateZ(0) rotateX(0deg);
   }
-}
-
-.postit{
-  animation-name: cascata;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
-
-  
-  top: 0;
-  left: 50%;
-  transform: translateY(-100%) translateZ(-500px) rotateX(-90deg); 
 }
