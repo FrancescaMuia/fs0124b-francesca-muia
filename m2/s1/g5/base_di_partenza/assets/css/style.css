@@ -210,6 +210,12 @@ a.btn {
 
 aside{
   flex: 1;
+  position: relative;
+}
+
+.container-aside {
+  position: sticky;
+  top: 100px;
 }
 
 aside h3 {
