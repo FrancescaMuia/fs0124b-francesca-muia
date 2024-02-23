@@ -9,6 +9,10 @@ body{
   border-radius: 50px;
 }
 
+.btn.green{
+  background-color: #1a8917;
+}
+
 h1{
   font-size: 100px;
   font-family: "Spectral", serif;
