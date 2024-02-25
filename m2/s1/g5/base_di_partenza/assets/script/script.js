@@ -1,5 +1,5 @@
 window.addEventListener("scroll", function () {
-  let navbar = document.getElementById("navbar");
+  let navbar = document.getElementById("header");
   let button = document.getElementById("btn");
   let scrollPosition = window.scrollY;
 
