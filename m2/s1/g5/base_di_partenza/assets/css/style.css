@@ -429,3 +429,29 @@ hr {
     flex: 1;
   }
 }
+
+@media screen and (max-width:480px) {
+  .menu a:nth-child(-n+3) {
+    display: none;
+  }
+
+  h1{
+    font-size: 70px;
+  }
+
+  .subtitle {
+    width: 90%;
+  }
+
+  .hero{
+    background-image: none;
+  }
+
+  .single-trend {
+    width: 100%;
+  }
+
+  .single-article {
+    padding-right: 0;
+  }
+}
