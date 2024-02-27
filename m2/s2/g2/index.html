@@ -9,7 +9,7 @@
   <body>
     <header>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
+        <div class="container">
           <a class="navbar-brand" href="#">
             <img src="./css/img/logo.jpg" alt="logo" width="100" height="50" />
           </a>
@@ -44,19 +44,24 @@
     </header>
 
     <main>
-      <div class="container bg-light mt-5 text-center">
+      <div class="container bg-light mt-5 p-5 text-center text-lg-start shadow-sm">
         <div class="row p-4">
           <div class="col-12">
-            <h1 class="d-inline-flex fw-normal">Eveline-R</h1>
-            <p class="d-inline-flex">- Feel the Freedom</p>
+            <h1 class="display-1 d-inline-flex fw-normal">Eveline-R</h1>
+            <p class="lead d-inline-flex">- Feel the Freedom</p>
           </div>
-          <div class="col-12"><p class="fst-italic">Scopri le destinazioni più calde del momento!</p></div>
-          <div class="col-12"><button type="button" class="btn btn-info m-3">Prenota ora</button></div>
+          <hr class="my-2" />
+          <div class="col-12"><p class="fs-3 fst-italic">Scopri le destinazioni più calde del momento!</p></div>
+          <div class="col-12"><button type="button" class="btn btn-info m-3 fw-bold text-light">Prenota ora</button></div>
         </div>
       </div>
-      <div class="container">
-        <div class="row g-2">
-          <div class="col-6 col-md-4 col-lg-3">
+      <div class="container my-5">
+        <div class="d-flex justify-content-between">
+          <h3>Saldi</h3>
+          <button type="button" class="btn btn-sm btn-outline-info border-0 align-self-center mb-4" data-bs-toggle="collapse" data-bs-target="#collapseWeekDeal" aria-expanded="false" aria-controls="collapseExample">Nascondi sezione</button>
+        </div>
+        <div class="row g-2" id="collapseWeekDeal">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
             <div class="card border-info border-2">
               <img src="./css/img/img1.jpg" class="card-img-top" alt="..." />
               <div class="card-body text-start">
@@ -66,7 +71,7 @@
               </div>
             </div>
           </div>
-          <div class="col-6 col-md-4 col-lg-3">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
             <div class="card border-info border-2">
               <img src="./css/img/img1.jpg" class="card-img-top" alt="..." />
               <div class="card-body text-start">
@@ -76,7 +81,7 @@
               </div>
             </div>
           </div>
-          <div class="col-6 col-md-4 col-lg-3">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
             <div class="card border-info border-2">
               <img src="./css/img/img1.jpg" class="card-img-top" alt="..." />
               <div class="card-body text-start">
@@ -86,7 +91,7 @@
               </div>
             </div>
           </div>
-          <div class="col-6 d-md-none col-lg-3 d-lg-block">
+          <div class="col-12 col-sm-6 d-md-none col-lg-3 d-lg-block">
             <div class="card border-info border-2">
               <img src="./css/img/img1.jpg" class="card-img-top" alt="..." />
               <div class="card-body text-start">
@@ -99,8 +104,12 @@
         </div>
       </div>
       <div class="container mt-5">
-        <div class="row g-3">
-          <div class="col-6 col-md-6 col-lg-4">
+        <div class="d-flex justify-content-between">
+          <h3>Welcome Summer</h3>
+          <button type="button" class="btn btn-sm btn-outline-info border-0 align-self-center mb-4" data-bs-toggle="collapse" data-bs-target="#collapseWelcomeSummer" aria-expanded="false" aria-controls="collapseExample">Nascondi sezione</button>
+        </div>
+        <div class="row g-3" id="collapseWelcomeSummer">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-4">
             <div class="card border border-0 shadow">
               <img src="./css/img/img1.jpg" class="card-img-top" alt="..." />
               <div class="card-body text-start">
@@ -110,7 +119,7 @@
               </div>
             </div>
           </div>
-          <div class="col-6 col-md-6 col-lg-4">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-4">
             <div class="card border border-0 shadow">
               <img src="./css/img/img1.jpg" class="card-img-top" alt="..." />
               <div class="card-body text-start">
@@ -120,7 +129,7 @@
               </div>
             </div>
           </div>
-          <div class="col-6 col-md-6 col-lg-4">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-4">
             <div class="card border border-0 shadow">
               <img src="./css/img/img1.jpg" class="card-img-top" alt="..." />
               <div class="card-body text-start">
@@ -130,7 +139,7 @@
               </div>
             </div>
           </div>
-          <div class="col-6 col-md-6 col-lg-4">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-4">
             <div class="card border border-0 shadow">
               <img src="./css/img/img1.jpg" class="card-img-top" alt="..." />
               <div class="card-body text-start">
@@ -140,7 +149,7 @@
               </div>
             </div>
           </div>
-          <div class="col-6 col-md-6 col-lg-4">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-4">
             <div class="card border border-0 shadow">
               <img src="./css/img/img1.jpg" class="card-img-top" alt="..." />
               <div class="card-body text-start">
@@ -150,7 +159,7 @@
               </div>
             </div>
           </div>
-          <div class="col-6 col-md-6 col-lg-4">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-4">
             <div class="card border border-0 shadow">
               <img src="./css/img/img1.jpg" class="card-img-top" alt="..." />
               <div class="card-body text-start">
@@ -161,9 +170,111 @@
             </div>
           </div>
         </div>
+        <section class="my-5 d-none d-sm-block" id="day-deal">
+          <h3 class="mb-4">Offerta del giorno</h3>
+
+          <div class="row">
+            <div class="col col-lg-8">
+              <img src="./css/img/img1.jpg" class="img-fluid rounded shadow" alt="maldives" />
+            </div>
+            <div class="col col-lg-4">
+              <h3 class="display-4 lh-1">Fushifaru Maldives</h3>
+              <p class="font-monospace text-muted">15.01.2021-31.01.2021</p>
+              <p class="lead">
+                Ville a partire da 500 €,<br />
+                non fartele sfuggire!
+              </p>
+              <span class="badge rounded-pill text-bg-dark">Best offer</span>
+            </div>
+          </div>
+        </section>
+        <section class="my-5">
+          <h3 class="mb-3">Last Minute</h3>
+          <div class="row g-3">
+            <div class="col-6 col-md-4 col-lg-2">
+              <div class="card shadow border-0">
+                <img class="card-img" src="./css/img/img1.jpg" alt="" />
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <div class="card shadow border-0">
+                <img class="card-img" src="./css/img/img1.jpg" alt="" />
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <div class="card shadow border-0">
+                <img class="card-img" src="./css/img/img1.jpg" alt="" />
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <div class="card shadow border-0">
+                <img class="card-img" src="./css/img/img1.jpg" alt="" />
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <div class="card shadow border-0">
+                <img class="card-img" src="./css/img/img1.jpg" alt="" />
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <div class="card shadow border-0">
+                <img class="card-img" src="./css/img/img1.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="testimonials" class="my-5 pt-5s">
+          <h3 class="text-center">Dicono di noi</h3>
+          <div class="d-flex pb-4">
+            <img class="border border-2 border-info rounded-circle" height="60" src="https://aeealberta.org/wp-content/uploads/2018/10/profile.png" />
+            <div class="px-4">
+              <h6>Username</h6>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+          <div class="d-flex pb-4">
+            <img class="border border-2 border-info rounded-circle" height="60" src="https://aeealberta.org/wp-content/uploads/2018/10/profile.png" />
+            <div class="px-4">
+              <h6>Username</h6>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+          <div class="d-flex pb-4">
+            <img class="border border-2 border-info rounded-circle" height="60" src="https://aeealberta.org/wp-content/uploads/2018/10/profile.png" />
+            <div class="px-4">
+              <h6>Username</h6>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+        </section>
       </div>
     </main>
-
+    <footer class="container-fluid bg-dark d-flex flex-column justify-content-center align-items-center py-5">
+      <button type="button" class="btn btn-outline-secondary mb-4" data-bs-toggle="modal" data-bs-target="#exampleModal">Contattaci</button>
+      <span class="text-white">© 2021 Kalina Travel LTD. All Rights Reserved.</span>
+    </footer>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <h5 class="display-4 modal-title" id="exampleModalLabel">Contact us</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="input-group mb-3">
+              <input type="text" class="form-control shadow-sm" placeholder="Inserisci la tua email" aria-label="Email" aria-describedby="basic-addon1" />
+            </div>
+            <div class="input-group">
+              <textarea class="form-control shadow-sm" aria-label="With textarea" placeholder="Scrivi qui il tuo messaggio"></textarea>
+            </div>
+          </div>
+          <div class="modal-footer justify-content-center border-0">
+            <button type="button" class="btn btn-transparent" data-bs-dismiss="modal">Chiudi</button>
+            <button type="button" class="btn btn-info shadow px-5">Invia</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
