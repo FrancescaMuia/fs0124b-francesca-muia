@@ -11,12 +11,12 @@
 }
 
 nav{
-  display: flex;
-  justify-content: space-between;
   background-color: $bgHero;
-  height: 3rem;
-  align-items: center;
-  padding: 0 5rem;
+  @include flex
+}
+
+.logo{
+  font-size: $logo;
 }
 
 .menu{
@@ -26,4 +26,38 @@ nav{
 
 .menu li a{
   color: $textColor;
+}
+
+h1{
+  font-size: $title;
+}
+
+.hero{
+  background-color: $bgHero;
+  @include hero
+}
+
+p{
+  font-size: $subtitle;
+  margin-bottom: $marginHero;
+}
+
+.testi h1{
+  margin-bottom: $marginHero;
+}
+
+.testi p{
+  color: $textColor;
+}
+
+.btn-primary{
+  background-color: map-get($btnColor , primary );
+}
+
+.btn-secondary{
+  background-color: map-get($btnColor , secondary );
+}
+
+.btn-tertiary{
+  background-color: map-get($btnColor , tertiary );
 }

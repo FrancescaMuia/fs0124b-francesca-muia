@@ -1,3 +1,7 @@
 $textColor: #f4f4f4;
 $bgHero: #640fc5;
-$btnColor: #0e6cff, #ff8700, #4caf50;
+$btnColor: (
+  primary: #0e6cff,
+  secondary: #ff8700,
+  tertiary: #4caf50
+)   

@@ -1,0 +1,13 @@
+@mixin flex{
+  display: flex;
+  justify-content: space-between;
+  height: 3rem;
+  align-items: center;
+  padding: 2% 10%;
+}
+
+@mixin hero{
+  padding: 5% 10% 0;
+  display: flex;
+  justify-content: space-around;
+}
