@@ -19,6 +19,9 @@
   border-top-color: white;
 }
 
+.btn.btn-outline-secondary:hover {
+  background-color: transparent;
+}
 
 .avatar-profile{
   max-width: 100px;
