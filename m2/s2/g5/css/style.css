@@ -18,3 +18,9 @@
 .form-select::after {
   border-top-color: white;
 }
+
+
+.avatar-profile{
+  max-width: 100px;
+  height: auto;
+}
