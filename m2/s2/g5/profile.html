@@ -12,62 +12,68 @@
     <nav class="navbar navbar-expand-lg bg-black px-4">
       <div class="container-fluid px-0">
         <a class="navbar-brand" href="#"><img src="./assets/netflix_logo.png" alt="logo" /></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-theme="dark" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-theme="dark" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon text-white"></span>
-        </button>
+        </button> -->
       </div>
     </nav>
 
     <main class="container-fluid bg-black">
-      <div class="container px-5 bg-black">
-        <div class="row">
-          <div class="col">
-            <h1 class="text-white">Edit Profile</h1>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <img class="avatar-profile" src="./assets/avatar.png" alt="" />
-          </div>
-          <div class="col">
-            <p class="bg-secondary text-white py-2 ps-2">Strive Student</p>
-            <label class="form-label text-white">Language:</label>
-            <select class="form-select" aria-label="Default select example">
-              <option selected>English</option>
-              <option value="1">French</option>
-              <option value="2">Italian</option>
-              <option value="3">German</option>
-            </select>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col"></div>
-          <div class="col my-5">
-            <p class="text-white">Maturity Settings:</p>
-            <p class="bg-secondary text-white py-2 ps-2">ALL MATURITY RATINGS</p>
-            <p class="text-white">Show titles of all maturity ratings for this profile.</p>
-            <button type="button" class="btn btn-outline-secondary rounded-0 px-4">EDIT</button>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col"></div>
-          <div class="col">
-            <p class="text-white">Autoplay controls</p>
-            <div class="form-check">
-              <input class="form-check-input border border-secondary bg-transparent rounded-0" type="checkbox" value="" id="flexCheckDefault" />
-              <label class="form-check-label text-white" for="flexCheckDefault"> Autoplay next </label>
+      <div class="container px-5">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-6">
+            <div class="row">
+              <div class="border-bottom border-secondary p-0">
+                <h1 class="text-white">Edit Profile</h1>
+              </div>
             </div>
-            <div class="form-check">
-              <input class="form-check-input border border-secondary bg-transparent rounded-0" type="checkbox" value="" id="flexCheckChecked" checked />
-              <label class="form-check-label text-white" for="flexCheckChecked"> Autoplay previews </label>
+            <div class="row my-3">
+              <div class="col-3 ps-0">
+                <img class="img-fluid" src="./assets/avatar.png" alt="" />
+              </div>
+              <div class="col-9">
+                <p class="bg-secondary text-white py-2 ps-2">Strive Student</p>
+                <p class="form-label text-white pt-2">Language:</p>
+                <select class="form-select-sm bg-black text-white rounded-0 mb-3" aria-label="Default select example">
+                  <option selected>English</option>
+                  <option value="1">French</option>
+                  <option value="2">Italian</option>
+                  <option value="3">German</option>
+                </select>
+
+                <div class="col-12 border-top border-bottom border-secondary py-3">
+                  <p class="text-white">Maturity Settings:</p>
+                  <p class="bg-secondary text-white py-2 ps-2">ALL MATURITY RATINGS</p>
+                  <p class="text-white">Show titles of all maturity ratings for this profile.</p>
+                  <button type="button" class="btn btn-outline-secondary rounded-0 px-4">EDIT</button>
+                </div>
+                <div class="col-12 pt-3">
+                  <p class="text-white">Autoplay controls</p>
+                  <div class="form-check">
+                    <input class="form-check-input border border-secondary bg-transparent rounded-0" type="checkbox" value="" id="flexCheckDefault" />
+                    <label class="form-check-label text-white" for="flexCheckDefault"> Autoplay next </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input border border-secondary bg-transparent rounded-0" type="checkbox" value="" id="flexCheckChecked" checked />
+                    <label class="form-check-label text-white" for="flexCheckChecked"> Autoplay previews </label>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col gx-2">
-            <button type="button" class="btn btn-outline-secondary rounded-0 px-4">SAVE</button>
-            <button type="button" class="btn btn-outline-secondary rounded-0 px-4">CANCEL</button>
-            <button type="button" class="btn btn-outline-secondary rounded-0 px-4">DELETE PROFILES</button>
+
+            <div class="row border-top border-secondary py-3">
+              <div class="col gx-2">
+                <div class="col-6">
+                  <button type="button" class="btn btn-outline-secondary rounded-0 px-4">SAVE</button>
+                </div>
+                <div class="col-6">
+                  <button type="button" class="btn btn-outline-secondary rounded-0 px-4">CANCEL</button>
+                </div>
+                <div class="col-12">
+                  <button type="button" class="btn btn-outline-secondary rounded-0 px-4">DELETE PROFILES</button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
