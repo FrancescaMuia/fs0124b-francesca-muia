@@ -18,7 +18,7 @@
       </div>
     </nav>
 
-    <main class="container-fluid bg-black">
+    <main class="container-fluid bg-black py-5">
       <div class="container px-5">
         <div class="row justify-content-center">
           <div class="col-12 col-md-6">
@@ -29,11 +29,17 @@
             </div>
             <div class="row my-3">
               <div class="col-3 ps-0">
-                <img class="img-fluid" src="./assets/avatar.png" alt="" />
+                <div class="col position-relative">
+                  <img class="img-fluid" src="./assets/avatar.png" alt="" />
+                  <button type="button" class="btn btn-dark btn-sm position-absolute bottom-0 start-0 border border-light rounded-circle ms-1 mb-1 custom-button">
+                    <i class="bi bi-pencil"></i>
+                  </button>
+                </div>
               </div>
+
               <div class="col-9">
                 <p class="bg-secondary text-white py-2 ps-2">Strive Student</p>
-                <p class="form-label text-white pt-2">Language:</p>
+                <p class="form-label text-secondary pt-2">Language:</p>
                 <select class="form-select-sm bg-black text-white rounded-0 mb-3" aria-label="Default select example">
                   <option selected>English</option>
                   <option value="1">French</option>
@@ -42,13 +48,13 @@
                 </select>
 
                 <div class="col-12 border-top border-bottom border-secondary py-3">
-                  <p class="text-white">Maturity Settings:</p>
+                  <p class="text-secondary">Maturity Settings:</p>
                   <p class="bg-secondary text-white py-2 ps-2">ALL MATURITY RATINGS</p>
-                  <p class="text-white">Show titles of all maturity ratings for this profile.</p>
+                  <p class="text-white">Show titles of <span class="fw-bold">all maturity ratings</span> for this profile.</p>
                   <button type="button" class="btn btn-outline-secondary rounded-0 px-4">EDIT</button>
                 </div>
                 <div class="col-12 pt-3">
-                  <p class="text-white">Autoplay controls</p>
+                  <p class="text-secondary">Autoplay controls</p>
                   <div class="form-check">
                     <input class="form-check-input border border-secondary bg-transparent rounded-0" type="checkbox" value="" id="flexCheckDefault" />
                     <label class="form-check-label text-white" for="flexCheckDefault"> Autoplay next </label>
@@ -62,16 +68,10 @@
             </div>
 
             <div class="row border-top border-secondary py-3">
-              <div class="col gx-2">
-                <div class="col-6">
-                  <button type="button" class="btn btn-outline-secondary rounded-0 px-4">SAVE</button>
-                </div>
-                <div class="col-6">
-                  <button type="button" class="btn btn-outline-secondary rounded-0 px-4">CANCEL</button>
-                </div>
-                <div class="col-12">
-                  <button type="button" class="btn btn-outline-secondary rounded-0 px-4">DELETE PROFILES</button>
-                </div>
+              <div class="col px-0">
+                <button type="button" class="btn btn-outline-secondary rounded-0 px-4 me-md-0 me-lg-2">SAVE</button>
+                <button type="button" class="btn btn-outline-secondary rounded-0 px-4 mx-md-0 mx-lg-2">CANCEL</button>
+                <button type="button" class="btn btn-outline-secondary rounded-0 px-4 mx-md-0 mt-md-1 mx-lg-2 mt-lg-0">DELETE PROFILES</button>
               </div>
             </div>
           </div>

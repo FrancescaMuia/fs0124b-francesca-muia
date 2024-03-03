@@ -8,7 +8,7 @@
 }
 
 .dropdown-toggle img {
-  width: 50px;
+  width: 40px;
 }
 
 .navbar-toggler-icon{
@@ -19,11 +19,28 @@
   border-top-color: white;
 }
 
-.btn.btn-outline-secondary:hover {
-  background-color: transparent;
+.img-hover-zoom:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
 }
+
+/* .btn.btn-outline-secondary:hover {
+  background-color: transparent;
+} */
 
 .avatar-profile{
   max-width: 100px;
   height: auto;
+}
+
+.btn.btn-outline-secondary:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.custom-button {
+  width: 20px;
+  height: 20px;
+  font-size: 10px;
+  padding: 0;
 }
