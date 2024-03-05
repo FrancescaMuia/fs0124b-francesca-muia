@@ -6,6 +6,24 @@
     <title>Document</title>
   </head>
   <body>
+    <form id="petForm">
+      <label for="petName">Pet Name:</label>
+      <input type="text" id="petName" name="petName" required /><br />
+
+      <label for="ownerName">Owner Name:</label>
+      <input type="text" id="ownerName" name="ownerName" required /><br />
+
+      <label for="species">Species:</label>
+      <input type="text" id="species" name="species" required /><br />
+
+      <label for="breed">Breed:</label>
+      <input type="text" id="breed" name="breed" required /><br />
+
+      <button type="submit">Aggiungi animale</button>
+    </form>
+
+    <ul id="petList"></ul>
+
     <script>
       class User {
         constructor(firstName, lastName, age, location) {
@@ -30,6 +48,70 @@
       console.log(utente);
       console.log(utente2);
       console.log(utente.confrontoEtà(utente2));
+
+      /* PET */
+      class Pet {
+        constructor(petName, ownerName, species, breed) {
+          this.petName = petName;
+          this.ownerName = ownerName;
+          this.species = species;
+          this.breed = breed;
+        }
+
+        confrontoPadrone(checkAnimale) {
+          if (this.ownerName === checkAnimale.ownerName) {
+            return true;
+          } else {
+            return false;
+          }
+        }
+      }
+
+      // let animale1 = new Pet("Apollo", "Giulia", "cane", "labrador");
+      // let animale2 = new Pet("Dafne", "Giulia", "cane", "akita");
+
+      // console.log(animale1);
+      // console.log(animale2);
+      // console.log(animale1.confrontoPadrone(animale2));
+
+      document.getElementById("petForm").addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        let petName = document.getElementById("petName").value;
+        let ownerName = document.getElementById("ownerName").value;
+        let species = document.getElementById("species").value;
+        let breed = document.getElementById("breed").value;
+
+        let pet = new Pet(petName, ownerName, species, breed);
+        if (compareOwners(pet)) {
+          console.log(true);
+        } else {
+          console.log(false);
+        }
+        addPetToList(pet);
+      });
+
+      function addPetToList(pet) {
+        let petList = document.getElementById("petList");
+
+        let listItem = document.createElement("li");
+        listItem.textContent = `Pet Name: ${pet.petName}, Owner: ${pet.ownerName}, Species: ${pet.species}, Breed: ${pet.breed}`;
+
+        petList.appendChild(listItem);
+        compareOwners(pet);
+      }
+
+      function compareOwners(newPet) {
+        let petList = document.getElementById("petList").getElementsByTagName("li");
+        for (let i = 0; i < petList.length; i++) {
+          let existingPetText = petList[i].textContent;
+          let existingOwnerName = existingPetText.split(",")[1].split(":")[1].trim();
+          if (existingOwnerName === newPet.ownerName) {
+            return true;
+          }
+        }
+        return false;
+      }
     </script>
   </body>
 </html>
