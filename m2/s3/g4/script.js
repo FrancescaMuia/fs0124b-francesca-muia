@@ -18,8 +18,8 @@ button.addEventListener("click", () => {
   chiamata("cat").then((dati) => {
     console.log(dati);
     let img = document.querySelectorAll(".card-img-top");
-    dati.photos.forEach((photo, index) => {
-      img[index].src = photo.src.medium;
+    img.forEach((img, index) => {
+      img.src = dati.photos[index].src.medium;
     });
   });
 });
