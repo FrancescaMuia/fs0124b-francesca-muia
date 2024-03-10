@@ -15,11 +15,13 @@ fetch("https://striveschool-api.herokuapp.com/api/product/", {
       let cardTitle = card.querySelector(".card-title");
       let cardText = card.querySelector(".card-text");
       let btnEdit = card.querySelector(".edit");
+      let btnInfo = card.querySelector(".moreInfo");
 
       cardImg.src = prodotto.imageUrl;
       cardTitle.innerText = prodotto.name;
       cardText.innerText = prodotto.description;
-      btnEdit.href = `detail.html?id=${prodotto._id}`;
+      btnEdit.href = `edit.html?id=${prodotto._id}`;
+      btnInfo.href = `dettaglio.html?id=${prodotto._id}`;
 
       document.querySelector("#listaProdotti").appendChild(card);
     }
