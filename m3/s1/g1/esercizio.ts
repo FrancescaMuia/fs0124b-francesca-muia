@@ -15,4 +15,20 @@ class User implements Smartphone {
     this.nome = _nome;
     this.cognome = _cognome;
   }
+
+  ricarica(amount: number) {
+    this.credito += amount;
+  }
+
+  chiamata(minuti: number) {
+    const costoPerMinuto = 0.2;
+    const TotCostoChiamata = costoPerMinuto * minuti;
+    this.credito -= TotCostoChiamata;
+  }
 }
+
+let utente = new User(0, 0, "Mario", "Rossi");
+utente.ricarica(20);
+utente.chiamata(4);
+console.log(utente.credito);
+console.log(utente.numeroChiamate);
