@@ -14,9 +14,17 @@ class User {
         const TotCostoChiamata = costoPerMinuto * minuti;
         this.credito -= TotCostoChiamata;
     }
+    numero404() {
+        return this.credito;
+    }
+    getNumeroChiamate() {
+        return this.numeroChiamate;
+    }
 }
 let utente = new User(0, 0, "Mario", "Rossi");
 utente.ricarica(20);
 utente.chiamata(4);
 console.log(utente.credito);
 console.log(utente.numeroChiamate);
+console.log(utente.numero404());
+console.log(utente.getNumeroChiamate());
