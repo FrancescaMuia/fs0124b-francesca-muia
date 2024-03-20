@@ -1,10 +1,18 @@
-<div class="container"></div>
-
-<div class="row">
-  <div *ngFor="let articolo of articoliArray" class="col4">
-    <h2>{{ articolo.title }}</h2>
-    <p>{{ articolo.body }}</p>
+<app-navbar></app-navbar>
+<div class="container">
+  <div class="row text-center">
+    <h2>In evidenza</h2>
+    <h2>{{ articoliArray[4].title }}</h2>
+    <p>{{ articoliArray[4].body }}</p>
   </div>
+</div>
 
-  <h2>{{ articoliArray[0].title }}</h2>
+<div class="container">
+  <div class="row">
+    <h2 class="my-5">post che potrebbero piacerti</h2>
+    <div *ngFor="let articolo of articoliRandom" class="col4">
+      <h2>{{ articolo.title }}</h2>
+      <p>{{ articolo.body }}</p>
+    </div>
+  </div>
 </div>
