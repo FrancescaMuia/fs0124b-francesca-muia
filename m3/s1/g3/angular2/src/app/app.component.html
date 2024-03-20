@@ -1,0 +1,10 @@
+<div class="container"></div>
+
+<div class="row">
+  <div *ngFor="let articolo of articoliArray" class="col4">
+    <h2>{{ articolo.title }}</h2>
+    <p>{{ articolo.body }}</p>
+  </div>
+
+  <h2>{{ articoliArray[0].title }}</h2>
+</div>
