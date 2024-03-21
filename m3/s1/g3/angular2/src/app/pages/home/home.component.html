@@ -1,0 +1,17 @@
+<div class="container">
+  <div *ngIf="articoliArray.length > 0" class="row text-center">
+    <h2>In evidenza</h2>
+    <h2>{{ articoliArray[4].title }}</h2>
+    <p>{{ articoliArray[4].body }}</p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <h2 class="my-5">post che potrebbero piacerti</h2>
+    <div *ngFor="let articolo of articoliRandom" class="col4">
+      <h2>{{ articolo.title }}</h2>
+      <p>{{ articolo.body }}</p>
+    </div>
+  </div>
+</div>
