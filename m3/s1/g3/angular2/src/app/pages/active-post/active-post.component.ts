@@ -8,9 +8,14 @@ import { Articolo } from '../../Models/articolo';
   styleUrl: './active-post.component.scss',
 })
 export class ActivePostComponent {
+  articoliArray: Articolo[] = [];
   articoliRandom: Articolo[] = [];
 
   constructor(private articoliSvc: ArticoliService) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.articoliSvc.getArticoli().then((res) => {
+      this.articoliArray = res.filter((articolo) => articolo.active === true);
+    });
+  }
 }
