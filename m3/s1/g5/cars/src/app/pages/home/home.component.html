@@ -1,1 +1,26 @@
-<p>home works!</p>
+<div>
+  <h2>Marchi</h2>
+  <ul>
+    <li></li>
+  </ul>
+</div>
+
+<div class="row">
+  <h2 class="my-5">In evidenza</h2>
+  <div *ngFor="let car of carRandom" class="col-6">
+    <div
+      [ngClass]="{ 'bg-success': car.available, 'bg-danger': !car.available }"
+      class="card"
+      style="width: 18rem"
+    >
+      <img src="{{ car.modelImage }}" class="card-img-top" alt="Car" />
+      <div class="card-body">
+        <h5 class="card-title">{{ car.brand }}</h5>
+        <p class="card-text">
+          {{ car.year }}
+        </p>
+        <a href="#" class="btn btn-primary">Dettagli</a>
+      </div>
+    </div>
+  </div>
+</div>
