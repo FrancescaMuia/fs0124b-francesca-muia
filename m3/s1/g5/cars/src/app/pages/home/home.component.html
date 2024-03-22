@@ -48,7 +48,24 @@
         <p class="card-text">
           {{ car.available ? "Disponibile" : "Non disponibile" }}
         </p>
-        <a href="#" class="btn btn-primary">Dettagli</a>
+        <a
+          *ngIf="car.brand === 'Audi'"
+          routerLink="/audi"
+          class="btn btn-primary"
+          >Dettagli</a
+        >
+        <a
+          *ngIf="car.brand === 'Fiat'"
+          routerLink="/fiat"
+          class="btn btn-primary"
+          >Dettagli</a
+        >
+        <a
+          *ngIf="car.brand === 'Ford'"
+          routerLink="/ford"
+          class="btn btn-primary"
+          >Dettagli</a
+        >
       </div>
     </div>
   </div>
