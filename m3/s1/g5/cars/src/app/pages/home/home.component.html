@@ -1,5 +1,5 @@
 <div class="text-center">
-  <h2>Marchi</h2>
+  <h2 class="my-4">Marchi</h2>
   <div class="row align-items-center">
     <div class="col-sm-4">
       <img
@@ -38,14 +38,14 @@
     >
       <img src="{{ car.modelImage }}" class="card-img-top" alt="Car" />
       <div class="card-body">
-        <h5 class="card-title">{{ car.brand }}</h5>
-        <p class="card-text">
+        <h5 class="card-title text-white">{{ car.brand }}</h5>
+        <p class="card-text text-white">
           {{ car.year }}
         </p>
-        <p class="card-text">
+        <p class="card-text text-white">
           {{ car.price | currency : "EUR" }}
         </p>
-        <p class="card-text">
+        <p class="card-text text-white">
           {{ car.available ? "Disponibile" : "Non disponibile" }}
         </p>
         <a

@@ -14,12 +14,7 @@ export class HomeComponent {
   constructor(private carSvc: CarsService) {}
 
   ngOnInit() {
-    // this.carSvc.getCars().then((res) => {
-    //   this.carArr = res;
-    // });
     this.carSvc.getCars().then((res) => {
-      // this.articoliRandom = res;
-      // console.log(this.articoliRandom);
       for (let i = 0; i < 2; i++) {
         let random = Math.floor(Math.random() * this.carArray.length);
         this.carRandom.push(res[random]);
