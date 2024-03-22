@@ -7,6 +7,9 @@ import { HomeComponent } from './pages/home/home.component';
 import { BrandComponent } from './pages/brand/brand.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { AudiComponent } from './pages/audi/audi.component';
+import { FordComponent } from './pages/ford/ford.component';
+import { FiatComponent } from './pages/fiat/fiat.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { FooterComponent } from './components/footer/footer.component';
     HomeComponent,
     BrandComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    AudiComponent,
+    FordComponent,
+    FiatComponent
   ],
   imports: [
     BrowserModule,
