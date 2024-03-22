@@ -1,1 +1,28 @@
-<p>ford works!</p>
+<div class="row text-center justify-content-center align-items-center">
+  <h2 class="my-5">Ford</h2>
+  <div
+    *ngFor="let car of carArray"
+    class="col-6 d-flex justify-content-center align-items-center"
+  >
+    <div
+      [ngClass]="{ 'bg-success': car.available, 'bg-danger': !car.available }"
+      class="card"
+      style="width: 18rem"
+    >
+      <img src="{{ car.modelImage }}" class="card-img-top" alt="Car" />
+      <div class="card-body">
+        <h5 class="card-title">{{ car.brand }}</h5>
+        <p class="card-text">
+          {{ car.year }}
+        </p>
+        <p class="card-text">
+          {{ car.price | currency : "EUR" }}
+        </p>
+        <p class="card-text">
+          {{ car.available ? "Disponibile" : "Non disponibile" }}
+        </p>
+        <a href="#" class="btn btn-primary">Dettagli</a>
+      </div>
+    </div>
+  </div>
+</div>

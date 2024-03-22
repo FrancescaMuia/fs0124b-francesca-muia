@@ -1,13 +1,36 @@
-<div>
+<div class="text-center">
   <h2>Marchi</h2>
-  <ul>
-    <li></li>
-  </ul>
+  <div class="row align-items-center">
+    <div class="col-sm-4">
+      <img
+        src="../../../assets/loghi/audi.png"
+        alt="Audi"
+        class="img-fluid img-small"
+      />
+    </div>
+    <div class="col-sm-4">
+      <img
+        src="../../../assets/loghi/fiat logo.png"
+        alt="Fiat"
+        class="img-fluid img-small"
+      />
+    </div>
+    <div class="col-sm-4">
+      <img
+        src="../../../assets/loghi/ford.png"
+        alt="Ford"
+        class="img-fluid img-small"
+      />
+    </div>
+  </div>
 </div>
 
-<div class="row">
+<div class="row text-center justify-content-center align-items-center">
   <h2 class="my-5">In evidenza</h2>
-  <div *ngFor="let car of carRandom" class="col-6">
+  <div
+    *ngFor="let car of carRandom"
+    class="col-6 d-flex justify-content-center align-items-center"
+  >
     <div
       [ngClass]="{ 'bg-success': car.available, 'bg-danger': !car.available }"
       class="card"
@@ -18,6 +41,12 @@
         <h5 class="card-title">{{ car.brand }}</h5>
         <p class="card-text">
           {{ car.year }}
+        </p>
+        <p class="card-text">
+          {{ car.price | currency : "EUR" }}
+        </p>
+        <p class="card-text">
+          {{ car.available ? "Disponibile" : "Non disponibile" }}
         </p>
         <a href="#" class="btn btn-primary">Dettagli</a>
       </div>
