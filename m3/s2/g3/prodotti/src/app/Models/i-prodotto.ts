@@ -1,4 +1,4 @@
-export interface Root {
+export interface iProdotto {
   id: number;
   title: string;
   description: string;
