@@ -17,4 +17,12 @@ export class HomeComponent {
       this.prodotti = prod.products;
     });
   }
+
+  aggiungiAiPreferiti(prodotti: iProdotto) {
+    this.prodSvc.addToFavourites(prodotti);
+  }
+
+  addToCart(product: iProdotto) {
+    this.prodSvc.addToCart(product);
+  }
 }
