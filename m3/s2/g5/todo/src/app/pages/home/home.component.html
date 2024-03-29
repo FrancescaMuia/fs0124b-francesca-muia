@@ -1,0 +1,21 @@
+<form>
+  <div
+    *ngFor="let t of todos"
+    [ngStyle]="{ 'background-color': t.completed ? 'green' : 'red' }"
+  >
+    <input
+      class="form-check-input"
+      type="checkbox"
+      id="task{{ t.id }}"
+      [(ngModel)]="t.completed"
+      name="tasks"
+      [checked]="t.completed"
+    />
+    <label class="form-check-label" for="task{{ t.id }}">
+      {{ t.todo }}
+    </label>
+    <p>{{ userSvc.getName(t.userId) }}</p>
+  </div>
+</form>
+
+{{ todos | json }}
