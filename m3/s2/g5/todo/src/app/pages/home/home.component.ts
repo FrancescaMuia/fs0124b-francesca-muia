@@ -13,14 +13,20 @@ export class HomeComponent {
   todos: Todo[] = [];
   users: User[] = [];
 
-  constructor(private todoSvc: TodoService, public userSvc: UsersService) {}
+  constructor(private todoSvc: TodoService, private userSvc: UsersService) {}
 
   ngOnInit() {
     this.todos = this.todoSvc.getAll();
-    this.users = this.userSvc.getAll();
+    this.todos.forEach((todo) => {
+      // todo.userName = this.userSvc.getName(todo.userId);
+    });
   }
 
-  // getUserName(userId: number): string {
-  //   return this.userSvc.getName(userId);
-  // }
+  status(todo: any): void {
+    this.todoSvc.status(todo.id, todo.completed);
+    // this.todos = this.todoSvc.getAll();
+  }
+  getUserName(userId: number): string {
+    return this.userSvc.getName(userId);
+  }
 }

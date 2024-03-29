@@ -919,15 +919,16 @@ export class TodoService {
     return this.todoSubject;
   }
 
-  status(todoId: number) {
-    let todoStatus = this.todos.map((todo) => {
-      if (todo.id === todoId) {
-        return { ...todo, completed: !todo.completed };
-      }
-      return todo;
-    });
-
-    this.todos = todoStatus;
-    this.todoSubject.next(todoStatus);
+  status(todoId: number, completed: boolean): void {
+    let todoStatus = this.todos.find((todo) => todo.id === todoId);
+    if (todoStatus!.completed) {
+      todoStatus!.completed = false;
+      // return { ...todo, completed: !todo.completed };
+    } else {
+      todoStatus!.completed = true;
+    }
   }
+
+  // this.todos = todoStatus;
+  // this.todoSubject.next(todoStatus);
 }
