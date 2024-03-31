@@ -17,15 +17,12 @@ export class HomeComponent {
 
   ngOnInit() {
     this.todos = this.todoSvc.getAll();
-    this.todos.forEach((todo) => {
-      // todo.userName = this.userSvc.getName(todo.userId);
-    });
   }
 
-  status(todo: any): void {
-    this.todoSvc.status(todo.id, todo.completed);
-    // this.todos = this.todoSvc.getAll();
+  toggleChangeStatus(todo: Todo): void {
+    todo.completed = !todo.completed;
   }
+
   getUserName(userId: number): string {
     return this.userSvc.getName(userId);
   }

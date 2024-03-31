@@ -1,1 +1,17 @@
-<p>complete works!</p>
+<form>
+  <div *ngFor="let t of todos" [ngStyle]="{ 'background-color': 'lightblue' }">
+    <input
+      type="checkbox"
+      name="task"
+      [checked]="t.completed"
+      (change)="toggleChangeStatus(t)"
+    />
+    {{ t.todo }}
+    <span *ngIf="t.completed" class="text-success">&#10004;</span>
+    <span *ngIf="!t.completed" class="text-danger">&#10008;</span>
+    <p>
+      <span class="u-bold"><span class="bullet">&bull;</span>Utente:</span>
+      {{ getUserName(t.userId) }}
+    </p>
+  </div>
+</form>

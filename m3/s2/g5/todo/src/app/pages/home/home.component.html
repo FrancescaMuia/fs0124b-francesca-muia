@@ -1,20 +1,19 @@
 <form>
-  <div
-    *ngFor="let t of todos"
-    [ngStyle]="{ 'background-color': t.completed ? 'green' : 'red' }"
-  >
+  <div *ngFor="let t of todos" [ngStyle]="{ 'background-color': 'lightblue' }">
     <input
       type="checkbox"
-      name="tasks"
-      [id]="t.id"
-      (change)="status(t)"
+      name="task"
       [checked]="t.completed"
+      (change)="toggleChangeStatus(t)"
     />
-    <label class="form-check-label" for="task{{ t.id }}">
-      {{ t.todo }}
-    </label>
-    <p>{{ getUserName(t.userId) }}</p>
+    {{ t.todo }}
+    <span *ngIf="t.completed" class="text-success">&#10004;</span>
+    <span *ngIf="!t.completed" class="text-danger">&#10008;</span>
+    <p>
+      <span class="u-bold"><span class="bullet">&bull;</span>Utente:</span>
+      {{ getUserName(t.userId) }}
+    </p>
   </div>
 </form>
 
-{{ todos | json }}
+<!-- {{ todos | json }} -->

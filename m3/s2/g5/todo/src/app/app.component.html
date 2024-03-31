@@ -1,7 +1,15 @@
 <div class="container">
-  <h1>TODO LIST</h1>
-  <a [routerLink]="['/']" class="btn btn-primary">Tutti i task</a>
-  <a [routerLink]="['/complete']" class="btn btn-primary">Completati</a>
-  <a [routerLink]="['/incomplete']" class="btn btn-primary">Da completare</a>
+  <h1 class="text-center">TODO LIST</h1>
+  <div class="d-flex justify-content-evenly my-3">
+    <a [routerLink]="['/']" class="btn btn-link text-primary menu-link"
+      >Tutti i task</a
+    >
+    <a [routerLink]="['/complete']" class="btn btn-link text-success menu-link"
+      >Completati</a
+    >
+    <a [routerLink]="['/incomplete']" class="btn btn-link text-danger menu-link"
+      >Da completare</a
+    >
+  </div>
   <router-outlet></router-outlet>
 </div>

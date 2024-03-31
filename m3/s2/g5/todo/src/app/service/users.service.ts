@@ -814,8 +814,8 @@ export class UsersService {
     return this.users;
   }
 
-  getId(userId: number) {
-    return this.users.find((dati) => dati.id === userId);
+  getId(userId: number): User | undefined {
+    return this.users.find((u) => u.id === userId);
   }
 
   getName(userId: number): string {

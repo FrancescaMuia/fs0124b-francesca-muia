@@ -910,25 +910,15 @@ export class TodoService {
   ];
 
   constructor() {}
-  private todoSubject = new BehaviorSubject<any[]>(this.todos);
   getAll(): Todo[] {
     return this.todos;
   }
 
-  gettodoSubject() {
-    return this.todoSubject;
+  getComplete(): Todo[] {
+    return this.todos.filter((status) => status.completed);
   }
 
-  status(todoId: number, completed: boolean): void {
-    let todoStatus = this.todos.find((todo) => todo.id === todoId);
-    if (todoStatus!.completed) {
-      todoStatus!.completed = false;
-      // return { ...todo, completed: !todo.completed };
-    } else {
-      todoStatus!.completed = true;
-    }
+  getIncomplete(): Todo[] {
+    return this.todos.filter((status) => !status.completed);
   }
-
-  // this.todos = todoStatus;
-  // this.todoSubject.next(todoStatus);
 }
