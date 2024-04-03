@@ -1,0 +1,43 @@
+<form [formGroup]="form">
+  <input
+    type="text"
+    formControlName="name"
+    class="form-control"
+    placeholder="nome"
+  />
+  <input
+    type="text"
+    formControlName="surname"
+    class="form-control"
+    placeholder="cognome"
+  />
+  <input
+    type="password"
+    formControlName="password"
+    class="form-control"
+    placeholder="password"
+  />
+  <input
+    type="password"
+    formControlName="confPassword"
+    class="form-control"
+    placeholder="conferma password"
+  />
+  <select formControlName="option" class="form-control">
+    <option value="">Genere</option>
+    <option value="female">Donna</option>
+    <option value="male">Uomo</option>
+    <option value="other">Altro</option>
+  </select>
+  <textarea
+    formControlName="bio"
+    class="form-control"
+    placeholder="biografia"
+  ></textarea>
+  <input
+    type="text"
+    formControlName="username"
+    class="form-control"
+    placeholder="username"
+  />
+</form>
