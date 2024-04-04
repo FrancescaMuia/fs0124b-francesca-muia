@@ -1,3 +1,10 @@
 {
-  "users": []
+  "users": [
+    {
+      "email": "giulia@bianchi.it",
+      "password": "$2a$10$REFRvZGAK8hVMuwBcFoQHe2pFKW2LgJ7KUbZz5TX6HGSDX3lCZWtG",
+      "name": "giulia",
+      "id": 1
+    }
+  ]
 }
