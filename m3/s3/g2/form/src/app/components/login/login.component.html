@@ -1,1 +1,22 @@
-<p>login works!</p>
+<form (ngSubmit)="submit(f)" #f="ngForm">
+  <input
+    type="text"
+    required
+    name="username"
+    ngModel
+    class="form-control"
+    #username="ngModel"
+    placeholder="username"
+  />
+  <div *ngIf="username.invalid && username.dirty" class="alert alert-danger">
+    Devi inserire uno username
+  </div>
+  <input
+    type="password"
+    name="password"
+    ngModel
+    class="form-control"
+    placeholder="password"
+  />
+  <button class="btn btn-success">Login</button>
+</form>
