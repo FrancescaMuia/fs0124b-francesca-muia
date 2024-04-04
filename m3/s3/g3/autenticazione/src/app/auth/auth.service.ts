@@ -75,4 +75,8 @@ export class AuthService {
     this.authSubject.next(accessData.user);
     this.autoLogout(accessData.accessToken);
   }
+
+  isLoggedIn(): boolean {
+    return false;
+  }
 }

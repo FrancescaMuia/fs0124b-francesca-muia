@@ -10,7 +10,7 @@ import { LoginData } from '../../Models/login-data';
 })
 export class LoginComponent {
   loginData: LoginData = {
-    email: 'mario@varano.it',
+    email: 'giulia@bianchi.it',
     password: 'password',
   };
 
