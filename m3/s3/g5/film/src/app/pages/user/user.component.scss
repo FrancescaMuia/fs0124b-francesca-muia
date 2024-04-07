@@ -1,0 +1,24 @@
+.user-profile {
+  border: 1px solid hsla(0, 0%, 75%, .3);
+  padding: 20px;
+  margin: 20px 0;
+  color: white;
+  background-color: #136878;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 4px;
+}
+
+.user-profile h2 {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.user-profile p {
+  margin-bottom: 5px;
+}
+
+.label {
+  font-weight: bold;
+  margin-right: 5px;
+}

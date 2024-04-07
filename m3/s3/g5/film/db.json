@@ -1,5 +1,91 @@
 {
-  "users": [],
-  "movies-popular": [],
+  "users": [
+    {
+      "email": "giulia@bianchi.it",
+      "password": "$2a$10$tPJ/Kkt1ApvIjbQ13jU20OIYCdhxSllZHTZAP5BhGKuodxEsxSqe2",
+      "name": "Giulia",
+      "id": 1
+    },
+    {
+      "email": "mario@rossi.it",
+      "password": "$2a$10$TS5ERj6I9k7jYTDyajnYOehVaeiXPEdRPFi4x8OWzwZFmH.PJiOBq",
+      "name": "Mario",
+      "id": 2
+    },
+    {
+      "email": "ciccio@gamer.it",
+      "password": "$2a$10$LVXw9Be4izpNBIqRPtvateypYYb9.tEQITxFht3bSwyk5NO4oyJgy",
+      "name": "ciccio",
+      "id": 3
+    },
+    {
+      "email": "frodo@baggins.it",
+      "password": "$2a$10$lGczQ/ZLtajbPDUxgB3fEe8fw39hpa5k4M9Mc6Tod1DBzrvIIwwdu",
+      "name": "Frodo",
+      "id": 4
+    }
+  ],
+  "movies-popular": [
+    {
+      "id": 1,
+      "title": "The Shawshank Redemption",
+      "picture": "https://picsum.photos/id/261/200/300",
+      "category": "Drama"
+    },
+    {
+      "id": 2,
+      "title": "Inception",
+      "picture": "https://picsum.photos/id/362/200/300",
+      "category": "Action, Sci-Fi, Thriller"
+    },
+    {
+      "id": 3,
+      "title": "The Dark Knight",
+      "picture": "https://picsum.photos/id/263/200/300",
+      "category": "Action, Crime, Drama"
+    },
+    {
+      "id": 4,
+      "title": "12 Angry Men",
+      "picture": "https://picsum.photos/id/264/200/300",
+      "category": "Drama"
+    },
+    {
+      "id": 5,
+      "title": "Schindler's List",
+      "picture": "https://picsum.photos/id/265/200/300",
+      "category": "Biography, Drama, History"
+    },
+    {
+      "id": 6,
+      "title": "The Lord of the Rings: The Return of the King",
+      "picture": "https://picsum.photos/id/266/200/300",
+      "category": "Action, Adventure, Drama"
+    },
+    {
+      "id": 7,
+      "title": "Pulp Fiction",
+      "picture": "https://picsum.photos/id/267/200/300",
+      "category": "Crime, Drama"
+    },
+    {
+      "id": 8,
+      "title": "The Good, the Bad and the Ugly",
+      "picture": "https://picsum.photos/id/268/200/300",
+      "category": "Western"
+    },
+    {
+      "id": 9,
+      "title": "The Lord of the Rings: The Fellowship of the Ring",
+      "picture": "https://picsum.photos/id/269/200/300",
+      "category": "Action, Adventure, Drama"
+    },
+    {
+      "id": 10,
+      "title": "Fight Club",
+      "picture": "https://picsum.photos/id/270/200/300",
+      "category": "Drama"
+    }
+  ],
   "favorites": []
 }

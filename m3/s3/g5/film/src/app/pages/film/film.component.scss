@@ -1,0 +1,27 @@
+.background-image {
+  background-image: url('//cnbl-cdn.bamgrid.com/assets/864cc00c1d7cb4e2cc4cc915cc01ab293ccd2f942d965ce764068432be416730/original');
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  position: relative;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 30%;
+  left: 60px;
+  transform: translateY(-50%);
+}
+
+.white-text {
+  color: white;
+  font-weight: bold;
+}
+
+.sub-text{
+  color: silver;
+}
+
+.card-background {
+  background-color: #136878;
+}

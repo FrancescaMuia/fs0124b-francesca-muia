@@ -1,1 +1,25 @@
-<p>film works!</p>
+<div class="background-image">
+  <div class="text-overlay">
+    <h1 class="white-text">Benvenut*!</h1>
+    <p class="sub-text">Scopri i film più adatti a te</p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row mt-3">
+    <div class="col-12">
+      <h2 class="mb-4 white-text">Lista dei Film</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4" *ngFor="let f of film">
+      <div class="card mb-4 card-background">
+        <img class="card-img-top" [src]="f.picture" alt="{{ f.title }}" />
+        <div class="card-body">
+          <h5 class="card-title white-text">{{ f.title }}</h5>
+          <p class="card-text white-text">{{ f.category }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

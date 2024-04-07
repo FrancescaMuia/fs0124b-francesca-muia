@@ -1,1 +1,8 @@
-<p>registrati works!</p>
+<div class="user-list">
+  <h2>Lista Utenti Registrati</h2>
+  <div *ngFor="let user of users" class="user-item">
+    <p><span class="label">Name:</span> {{ user.name }}</p>
+    <p><span class="label">Email:</span> {{ user.email }}</p>
+    <p><span class="label">ID:</span> {{ user.id }}</p>
+  </div>
+</div>

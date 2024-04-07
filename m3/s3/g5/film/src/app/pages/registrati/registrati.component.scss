@@ -1,0 +1,29 @@
+.user-list {
+  margin-top: 20px;
+  color: white;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.user-list h2 {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.user-item {
+  color: white;
+  background-color: #136878;
+  border: 1px solid hsla(0, 0%, 75%, .3);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.user-item p {
+  margin: 5px 0;
+}
+
+.label {
+  font-weight: bold;
+  margin-right: 5px;
+}
