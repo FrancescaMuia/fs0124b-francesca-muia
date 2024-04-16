@@ -12,6 +12,7 @@ public class Main {
         System.out.println("è bisestile?" + annoBisestile(2021));
         System.out.println("è bisestile?" + annoBisestile(2020));
         es4();
+        count();
     }
 
     public static boolean PariDispari(String stringa){
@@ -39,5 +40,17 @@ public class Main {
            }
            i++;
         }
+    }
+
+    public static void count(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Inserisci un numero intero: ");
+        int numero = scanner.nextInt();
+        System.out.println("Conto alla rovescia:");
+
+        for (int i = numero; i >= 0; i--) {
+            System.out.println(i);
+        }
+        scanner.close();
     }
 }
