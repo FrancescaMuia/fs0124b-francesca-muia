@@ -3,6 +3,7 @@ package progetto;
 public class Immagine extends ElementoMultimediale {
 
     public Immagine(String titolo, int durata) {
+        //richiamo costruttore della classe padre
         super(titolo, durata);
     }
 
