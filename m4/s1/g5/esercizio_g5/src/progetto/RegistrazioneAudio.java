@@ -2,6 +2,10 @@ package progetto;
 
 public class RegistrazioneAudio extends ElementoMultimediale {
 
+    /*public int getVolume() {
+        return volume;
+    }*/
+
     //aggiungo l'attributo che è solo dell'audio
     private int volume;
 
