@@ -30,6 +30,7 @@ public abstract class ElementoMultimediale {
         this.durata = durata;
     }
 
-    //metodo comune a più classi
+    //metodo comune a più classi riproducibili
     public abstract void play();
+
 }
