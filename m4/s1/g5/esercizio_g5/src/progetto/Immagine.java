@@ -16,6 +16,7 @@ public class Immagine extends ElementoMultimediale {
         //codice che mi permette di visualizzare un'immagine
     }
 
+    //metodo solo dell'immagine
     public void show(){
         System.out.print(this.titolo);
         for (int i=0; i<luminosita; i++){
@@ -36,6 +37,9 @@ public class Immagine extends ElementoMultimediale {
     public void diminuisciLum(){
         if(luminosita>0){
             luminosita--;
+        }
+        else {
+            System.out.println("luminosità al minimo");
         }
     }
 }
