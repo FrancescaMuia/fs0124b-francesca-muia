@@ -1,4 +1,4 @@
-package it.epicode;
+package main.java.it.epicode.data;
 
 public abstract class Documento {
     private Long isbn;

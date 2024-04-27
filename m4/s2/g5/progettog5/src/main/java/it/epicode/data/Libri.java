@@ -1,4 +1,4 @@
-package it.epicode;
+package main.java.it.epicode.data;
 
 public class Libri extends Documento{
     private String autore;
@@ -28,5 +28,13 @@ public class Libri extends Documento{
 
     public void setGenere(String genere) {
         this.genere = genere;
+    }
+
+    @Override
+    public String toString() {
+        return "Libri{" +
+                "autore='" + autore + '\'' +
+                ", genere='" + genere + '\'' +
+                '}';
     }
 }

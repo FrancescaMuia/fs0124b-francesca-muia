@@ -1,4 +1,4 @@
-package it.epicode;
+package main.java.it.epicode.data;
 
 public class Riviste extends Documento {
     private Periodicita periodicita;
@@ -18,5 +18,12 @@ public class Riviste extends Documento {
 
     public void setPeriodicita(Periodicita periodicita) {
         this.periodicita = periodicita;
+    }
+
+    @Override
+    public String toString() {
+        return "Riviste{" +
+                "periodicita=" + periodicita +
+                '}';
     }
 }
