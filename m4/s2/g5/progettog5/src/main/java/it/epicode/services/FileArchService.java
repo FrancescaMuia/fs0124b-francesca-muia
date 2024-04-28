@@ -70,11 +70,11 @@ public class FileArchService implements ArchService {
                 String titolo = parts[2];
                 int anno = Integer.parseInt(parts[3]);
                 int numeroPagine = Integer.parseInt(parts[4]);
-                if ("Libro".equals(parts[0])) { //se libro leggo autore e genere
+                if ("Libri".equals(parts[0])) { //se libro leggo autore e genere
                     String autore = parts[5];
                     String genere = parts[6];
                     doc.add(new Libri(isbn, titolo, anno, numeroPagine, autore, genere)); //aggiungo il costruttore di libri
-                } else if ("Rivista".equals(parts[0])) {  //se è rivista leggo periodicità
+                } else if ("Riviste".equals(parts[0])) {  //se è rivista leggo periodicità
                     Periodicita periodicita = Periodicita.valueOf(parts[5]);
 
                     doc.add(new Riviste(isbn, titolo, anno, numeroPagine, periodicita));
