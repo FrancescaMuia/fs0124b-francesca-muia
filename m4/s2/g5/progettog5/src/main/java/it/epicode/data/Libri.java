@@ -1,5 +1,6 @@
 package main.java.it.epicode.data;
 
+//aggiungo parametri solo della classe libro
 public class Libri extends Documento{
     private String autore;
     private String genere;
@@ -8,6 +9,7 @@ public class Libri extends Documento{
         this.autore = autore;
         this.genere = genere;
 
+        //aggiungo supercostruttore dei parametri generici
         super.setIsbn(isbn);
         super.setTitolo(titolo);
         super.setAnno(anno);

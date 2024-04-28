@@ -1,5 +1,6 @@
 package main.java.it.epicode.data;
 
+//classe astratta contenente proprietà comuni alle figlie
 public abstract class Documento {
     private Long isbn;
     private String titolo;
