@@ -1,4 +1,4 @@
-package it.epicode.g2;
+package it.epicode.enums;
 
 public enum TipoEvento {
     PUBBLICO,

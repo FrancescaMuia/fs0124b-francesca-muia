@@ -1,22 +1,19 @@
-package it.epicode.g2;
+package it.epicode.dao;
 
+import it.epicode.Evento;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.EntityTransaction;
 import jakarta.persistence.Persistence;
 
-import java.util.Date;
-
-public class EventoDAO {
+public class EventoDao {
 
         private static final String PERSISTENCE_UNIT = "JPA_Sample";
 
     EntityManagerFactory emf = Persistence.createEntityManagerFactory(PERSISTENCE_UNIT);
     EntityManager em = emf.createEntityManager();
 
-    public void save() {
-
-        var e = new Evento(1L, "titolo1", new Date(), "prova", TipoEvento.PUBBLICO, 100);
+    public void save(Evento e) {
 
         EntityTransaction trans = em.getTransaction();
 
