@@ -8,13 +8,17 @@ import it.epicode.library.entities.LibraryItem;
 import it.epicode.library.entities.Magazine;
 import it.epicode.library.entities.User;
 import it.epicode.library.entities.enums.Frequency;
+import java.util.Date;
 import it.epicode.library.services.IsbValidatorImpl;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.List;
 
 public class Program {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws ParseException {
 		LibraryDaoImpl biblio = new LibraryDaoImpl();
+		UserDaoImpl user = new UserDaoImpl();
 
 		LibraryItem libro1 = new Book("999999999", "1984", 1949, 1100, "George Orwell", "Distopia");
 		LibraryItem libro2 = new Book("888888888", "Orgoglio e Pregiudizio", 1813, 1100, "Jane Austen", "Classico");
@@ -32,30 +36,33 @@ public class Program {
 		//biblio.addItem(mag2);
 		//biblio.addItem(mag3);
 
-		String isbn = "999999999";
+		String isbn = "888888888";
 		LibraryItem isbnTrovato = biblio.getItemByISBN(isbn);
 
 		System.out.println(isbnTrovato);
 
 		int annoPub = 1949;
 		List<LibraryItem> pubAnno = biblio.getItemsByPublicationYear(annoPub);
-		System.out.println("Libri pubblicati nel " + pubAnno + ":");
+		System.out.println("Libri pubblicati nel " + annoPub + ":" + pubAnno );
 
 
 		String autore = "George Orwell";
 		List<LibraryItem> autoreTrovato = biblio.getItemsByAuthor(autore);
-		System.out.println("Libri dell'autore " + autoreTrovato + ":");
+		System.out.println("Libri dell'autore " + autore + ":" + autoreTrovato );
 
 
 		String titolo = "1984";
 		List<LibraryItem> titoloTrovato = biblio.getItemsByTitle(titolo);
-		System.out.println("Libri con il titolo " + titoloTrovato + ":");
+		System.out.println("Libri con il titolo " + titolo + ":" + titoloTrovato + ":");
 
 
 		String libroDaRimuovere = "999999999";
 		//biblio.removeItemByISBN(libroDaRimuovere);
 
 
+		Date dataDiNascita1 = new SimpleDateFormat("yyyy-MM-dd").parse("1992-05-08");
+		User utente1 = new User("Anna", "Rossi", dataDiNascita1, 1);
 
+		user.addUser(utente1);
 	}
 }
