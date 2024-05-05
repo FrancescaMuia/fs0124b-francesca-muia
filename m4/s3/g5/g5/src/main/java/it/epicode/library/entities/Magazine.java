@@ -1,13 +1,16 @@
 package it.epicode.library.entities;
 
 import it.epicode.library.entities.constants.Tables;
+import it.epicode.library.entities.enums.Frequency;
+import jakarta.persistence.DiscriminatorValue;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Enumerated;
 import jakarta.persistence.Table;
-import jdk.jfr.Frequency;
+
 
 @Entity
 @Table(name= Tables.Names.MAGAZINES)
+@DiscriminatorValue(Tables.Discriminators.MAGAZINES)
 public class Magazine extends LibraryItem{
 
     @Enumerated

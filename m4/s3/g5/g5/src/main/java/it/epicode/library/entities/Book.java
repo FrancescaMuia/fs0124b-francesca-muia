@@ -46,6 +46,7 @@ public class Book extends LibraryItem {
 		return "Book{" +
 				"author='" + author + '\'' +
 				", kind='" + kind + '\'' +
+				", title='" + title + '\'' +
 				'}';
 	}
 }

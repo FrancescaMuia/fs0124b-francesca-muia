@@ -17,14 +17,14 @@ import jakarta.persistence.Table;
 @Inheritance(strategy = InheritanceType.JOINED) // ho scelto questa strategia...
 
 //qui vado a definire il nome della colonna discriminante
-@DiscriminatorColumn(name = Tables.Columns.DISCRIMINATOR, discriminatorType = DiscriminatorType.INTEGER)
+@DiscriminatorColumn(name = "item_type", discriminatorType = DiscriminatorType.STRING)
 public abstract class LibraryItem //
 		// estendendo BaseEntity ottengo già la gestione di Id e InsertedAt
 		extends BaseEntity {
 	@Column(length = 13, nullable = false)
 	private String isbn;
 	@Column(length = 125, nullable = false)
-	private String title;
+	protected String title;
 	private int publicationYear;
 	private int pages;
 
