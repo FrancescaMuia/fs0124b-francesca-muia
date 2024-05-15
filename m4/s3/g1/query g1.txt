@@ -1,0 +1,36 @@
+SELECT * FROM eserciziog1.clienti
+WHERE "Nome" = 'Mario'
+
+SELECT "Nome", "Cognome" FROM eserciziog1.clienti
+WHERE "AnnoNascita"= 1982
+
+SELECT "NumeroFattura" FROM eserciziog1.fatture
+WHERE "Iva" = 20
+
+SELECT * FROM eserciziog1.prodotti
+WHERE EXTRACT(YEAR FROM "DataAttivazione") = 1997 AND ("InProduzione" = true OR "InCommercio" = true)
+
+SELECT * FROM eserciziog1.fatture
+JOIN eserciziog1.clienti ON "NumeroCliente" = "IdCliente"
+WHERE "Importo" < 1000 
+
+SELECT EXTRACT (YEAR FROM "DataFAttura") AS "Anno", COUNT("DataFAttura") AS "Numero Fatture"
+FROM eserciziog1.fatture
+WHERE "Iva" = 20
+GROUP BY EXTRACT(YEAR FROM "DataFAttura")
+
+SELECT EXTRACT (YEAR FROM "DataFAttura") AS "Anno", COUNT("DataFAttura") AS "Numero Fatture", SUM("Importo") AS "Tot"
+FROM eserciziog1.fatture
+WHERE "Iva" = 20
+GROUP BY EXTRACT(YEAR FROM "DataFAttura") 
+
+SELECT EXTRACT (YEAR FROM "DataFAttura") AS "Anno", COUNT("DataFAttura") AS "Numero Fatture"
+FROM eserciziog1.fatture
+WHERE "Tipologia" = 'A'
+GROUP BY EXTRACT(YEAR FROM "DataFAttura")
+HAVING COUNT("DataFAttura") >2
+
+SELECT SUM("Importo") AS "Importo tot", "RegioneResidenza" AS "Regione"
+FROM eserciziog1.fatture
+JOIN eserciziog1.clienti ON "NumeroCliente" = "IdCliente"
+GROUP BY "RegioneResidenza"
