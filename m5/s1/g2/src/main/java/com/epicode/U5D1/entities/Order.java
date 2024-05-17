@@ -13,14 +13,15 @@ public class Order {
     private int orderNumber;
     private List<Item> orderList;
     private Double totalCost;
-    private int peopleNumber;
+    private int seatNumber;
+    private Double seatAmount;
     private Date orderTime;
     private OrderStatus status;
 
-    public Order(int orderNumber, List<Item> orderList, int peopleNumber){
+    public Order(int orderNumber, List<Item> orderList, int seatNumber){
         this.orderNumber = orderNumber;
         this.orderList = orderList;
-        this.peopleNumber = peopleNumber;
+        this.seatNumber = seatNumber;
         this.orderTime = new Date();
         this.status = OrderStatus.PENDING;
         this.totalCost = calculateTotal(orderList);

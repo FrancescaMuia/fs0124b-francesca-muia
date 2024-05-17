@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/esercizi.iml" filepath="$PROJECT_DIR$/.idea/esercizi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/m4/s1/g1/g1.iml" filepath="$PROJECT_DIR$/m4/s1/g1/g1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/m4/s1/g2/g2.iml" filepath="$PROJECT_DIR$/m4/s1/g2/g2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/m4/s2/g2/g21.iml" filepath="$PROJECT_DIR$/m4/s2/g2/g21.iml" />
+      <module fileurl="file://$PROJECT_DIR$/m4/s2/g3/g3.iml" filepath="$PROJECT_DIR$/m4/s2/g3/g3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/m4/s1/g3/g31.iml" filepath="$PROJECT_DIR$/m4/s1/g3/g31.iml" />
+      <module fileurl="file://$PROJECT_DIR$/m4/s3/g3/g32.iml" filepath="$PROJECT_DIR$/m4/s3/g3/g32.iml" />
+      <module fileurl="file://$PROJECT_DIR$/m4/s1/g4/g4.iml" filepath="$PROJECT_DIR$/m4/s1/g4/g4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/m4/s2/g5/g5.iml" filepath="$PROJECT_DIR$/m4/s2/g5/g5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/m4/s3/g5/g51.iml" filepath="$PROJECT_DIR$/m4/s3/g5/g51.iml" />
+      <module fileurl="file://$PROJECT_DIR$/m4/s1/g5/g52.iml" filepath="$PROJECT_DIR$/m4/s1/g5/g52.iml" />
+      <module fileurl="file://$PROJECT_DIR$/m5/m5.iml" filepath="$PROJECT_DIR$/m5/m5.iml" />
+    </modules>
+  </component>
+</project>
