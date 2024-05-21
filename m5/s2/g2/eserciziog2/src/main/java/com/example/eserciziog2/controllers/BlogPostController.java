@@ -19,7 +19,7 @@ public class BlogPostController {
 
     @GetMapping("")
     public List<BlogPost> blogPostList(){
-        return blogPostService.getAll();
+        return blogPostService.getBlogs();
     }
 
     @GetMapping("/{id}")
