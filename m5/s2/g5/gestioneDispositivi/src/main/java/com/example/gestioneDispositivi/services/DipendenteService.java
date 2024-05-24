@@ -16,8 +16,8 @@ public class DipendenteService {
     @Autowired
     private DipendenteRepository dipendenteRepository;
 
-    public Dipendente save(Dipendente body){
-        return dipendenteRepository.save(body);
+    public Dipendente save(Dipendente dipendente){
+        return dipendenteRepository.save(dipendente);
     }
 
     public Page<Dipendente> getDipendenti(int page, int size, String sort) {

@@ -31,6 +31,7 @@ public class Dipendente {
     private String email;
     @NotBlank(message="Campo obbligatorio")
     private String userName;
+    private String pathImmagine;
 
     @OneToMany(mappedBy = "dipendente")
     @JsonManagedReference
