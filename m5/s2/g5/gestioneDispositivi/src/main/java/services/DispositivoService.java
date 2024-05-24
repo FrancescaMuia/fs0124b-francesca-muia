@@ -35,4 +35,13 @@ public class DispositivoService {
         Dispositivo found = this.findById(id);
         dispositivoRepository.delete(found);
     }
+
+    public Dispositivo findByIdAndUpdate(Long id, Dispositivo body){
+        Dispositivo found = this.findById(id);
+        found.setStato(body.getStato());
+        found.setTipologia(body.getTipologia());
+        found.setStato(body.getStato());
+        found.setDipendente(body.getDipendente());
+        return dispositivoRepository.save(found);
+    }
 }
