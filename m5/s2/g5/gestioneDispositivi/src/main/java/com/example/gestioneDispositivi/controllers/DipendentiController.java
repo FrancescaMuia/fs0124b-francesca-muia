@@ -1,6 +1,7 @@
 package com.example.gestioneDispositivi.controllers;
 
 import com.example.gestioneDispositivi.entities.Dipendente;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -16,7 +17,7 @@ public class DipendentiController {
     private DipendenteService dipendenteService;
 
     @PostMapping
-    public Dipendente createDipendente(@RequestBody Dipendente dipendente) {
+    public Dipendente createDipendente(@Valid @RequestBody Dipendente dipendente) {
         return dipendenteService.save(dipendente);
     }
 
@@ -31,7 +32,7 @@ public class DipendentiController {
     }
 
     @PutMapping("/{id}")
-    public Dipendente updateDipendente(@PathVariable Long id, @RequestBody Dipendente dipendente) {
+    public Dipendente updateDipendente(@PathVariable Long id, @Valid @RequestBody Dipendente dipendente) {
         return dipendenteService.findByIdAndUpdate(id, dipendente);
     }
 

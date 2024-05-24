@@ -3,6 +3,7 @@ package com.example.gestioneDispositivi.controllers;
 import com.example.gestioneDispositivi.entities.Dipendente;
 import com.example.gestioneDispositivi.entities.Dispositivo;
 import com.example.gestioneDispositivi.enums.StatoDispositivo;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -21,7 +22,7 @@ public class DispositiviController {
     private DipendenteService dipendenteService;
 
     @PostMapping
-    public Dispositivo createDispositivo(@RequestBody Dispositivo dispositivo) {
+    public Dispositivo createDispositivo(@Valid @RequestBody Dispositivo dispositivo) {
         return dispositivoService.save(dispositivo);
     }
 
@@ -36,7 +37,7 @@ public class DispositiviController {
     }
 
     @PutMapping("/{id}")
-    public Dispositivo updateDispositivo(@PathVariable Long id, @RequestBody Dispositivo dispositivo) {
+    public Dispositivo updateDispositivo(@PathVariable Long id, @Valid @RequestBody Dispositivo dispositivo) {
         return dispositivoService.findByIdAndUpdate(id, dispositivo);
     }
 
