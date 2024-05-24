@@ -47,7 +47,7 @@ public class DispositiviController {
     }
 
     @PutMapping("/assign/{id}/{dipendenteId}")
-    public Dispositivo assignDispositivo(@PathVariable Long id, @RequestParam Long dipendenteId) {
+    public Dispositivo assignDispositivo(@PathVariable Long id, @PathVariable Long dipendenteId) {
         Dispositivo dispositivo = dispositivoService.findById(id);
         Dipendente dipendente = dipendenteService.findById(dipendenteId);
         dispositivo.setDipendente(dipendente);

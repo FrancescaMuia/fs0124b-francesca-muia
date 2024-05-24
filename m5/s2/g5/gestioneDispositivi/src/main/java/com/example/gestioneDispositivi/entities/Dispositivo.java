@@ -1,6 +1,7 @@
 package com.example.gestioneDispositivi.entities;
 
 import com.example.gestioneDispositivi.enums.StatoDispositivo;
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -23,5 +24,6 @@ public class Dispositivo {
     private StatoDispositivo stato;
 
     @ManyToOne
+    @JsonBackReference
     private Dipendente dipendente;
 }

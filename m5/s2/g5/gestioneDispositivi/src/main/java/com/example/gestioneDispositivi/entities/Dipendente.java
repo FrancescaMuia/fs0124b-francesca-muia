@@ -1,5 +1,6 @@
 package com.example.gestioneDispositivi.entities;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
@@ -21,24 +22,17 @@ public class Dipendente {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
-    @NotBlank
-    @NotEmpty
-    @NotNull
+    @NotBlank(message="Campo obbligatorio")
     private String nome;
-    @NotBlank
-    @NotEmpty
-    @NotNull
+    @NotBlank(message="Campo obbligatorio")
     private String cognome;
-    @NotBlank
-    @NotEmpty
-    @NotNull
+    @NotBlank(message="Campo obbligatorio")
     @Email
     private String email;
-    @NotBlank
-    @NotEmpty
-    @NotNull
+    @NotBlank(message="Campo obbligatorio")
     private String userName;
 
     @OneToMany(mappedBy = "dipendente")
+    @JsonManagedReference
     private List<Dispositivo> dispositivi;
 }
