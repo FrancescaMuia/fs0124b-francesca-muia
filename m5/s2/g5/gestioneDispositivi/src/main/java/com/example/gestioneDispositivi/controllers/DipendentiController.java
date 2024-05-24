@@ -1,10 +1,10 @@
 package com.example.gestioneDispositivi.controllers;
 
-import entities.Dipendente;
+import com.example.gestioneDispositivi.entities.Dipendente;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import services.DipendenteService;
+import com.example.gestioneDispositivi.services.DipendenteService;
 
 import java.util.List;
 

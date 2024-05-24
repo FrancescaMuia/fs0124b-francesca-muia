@@ -1,6 +1,6 @@
-package repositories;
+package com.example.gestioneDispositivi.repositories;
 
-import entities.Dipendente;
+import com.example.gestioneDispositivi.entities.Dipendente;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface DipendenteRepository extends JpaRepository<Dipendente, Long> {

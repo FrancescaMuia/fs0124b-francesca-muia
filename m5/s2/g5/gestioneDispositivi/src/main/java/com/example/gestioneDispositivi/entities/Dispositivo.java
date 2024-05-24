@@ -1,6 +1,6 @@
-package entities;
+package com.example.gestioneDispositivi.entities;
 
-import enums.StatoDispositivo;
+import com.example.gestioneDispositivi.enums.StatoDispositivo;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;

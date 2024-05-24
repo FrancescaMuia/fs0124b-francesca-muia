@@ -1,13 +1,13 @@
 package com.example.gestioneDispositivi.controllers;
 
-import entities.Dipendente;
-import entities.Dispositivo;
-import enums.StatoDispositivo;
+import com.example.gestioneDispositivi.entities.Dipendente;
+import com.example.gestioneDispositivi.entities.Dispositivo;
+import com.example.gestioneDispositivi.enums.StatoDispositivo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import services.DipendenteService;
-import services.DispositivoService;
+import com.example.gestioneDispositivi.services.DipendenteService;
+import com.example.gestioneDispositivi.services.DispositivoService;
 
 import java.util.List;
 
@@ -46,7 +46,7 @@ public class DispositiviController {
         return ResponseEntity.noContent().build();
     }
 
-    @PutMapping("/assign/{id}")
+    @PutMapping("/assign/{id}/{dipendenteId}")
     public Dispositivo assignDispositivo(@PathVariable Long id, @RequestParam Long dipendenteId) {
         Dispositivo dispositivo = dispositivoService.findById(id);
         Dipendente dipendente = dipendenteService.findById(dipendenteId);

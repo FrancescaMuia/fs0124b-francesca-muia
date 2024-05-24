@@ -1,4 +1,4 @@
-package enums;
+package com.example.gestioneDispositivi.enums;
 
 public enum StatoDispositivo {
     DISPONIBILE, ASSEGNATO, IN_MANUTENZIONE, DISMESSO

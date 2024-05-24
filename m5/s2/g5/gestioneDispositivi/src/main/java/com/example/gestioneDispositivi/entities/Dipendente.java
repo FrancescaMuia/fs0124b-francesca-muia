@@ -1,4 +1,4 @@
-package entities;
+package com.example.gestioneDispositivi.entities;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;

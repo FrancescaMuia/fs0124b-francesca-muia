@@ -1,4 +1,4 @@
-package services;
+package com.example.gestioneDispositivi.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -6,8 +6,8 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
-import entities.Dipendente;
-import repositories.DipendenteRepository;
+import com.example.gestioneDispositivi.entities.Dipendente;
+import com.example.gestioneDispositivi.repositories.DipendenteRepository;
 import com.example.gestioneDispositivi.exceptions.NotFoundException;
 
 @Service
