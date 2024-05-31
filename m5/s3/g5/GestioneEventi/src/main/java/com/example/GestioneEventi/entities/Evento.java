@@ -11,7 +11,7 @@ import java.util.List;
 @Data
 @EqualsAndHashCode(callSuper = false, onlyExplicitlyIncluded = true)
 @Entity
-@Table(name = "events")
+@Table(name = "eventi")
 @Builder(setterPrefix = "with")
 @AllArgsConstructor
 @NoArgsConstructor
