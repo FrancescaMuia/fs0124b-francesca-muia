@@ -45,11 +45,11 @@ public class PrenotazioneController {
         return ResponseEntity.ok().build();
     }
 
-    @GetMapping("/me")
+    @GetMapping("/myreservation")
     public ResponseEntity<List<Prenotazione>> getCurrentUserPrenotazioni() {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         String username = authentication.getName();
-        Optional<Utente> utenteOptional = utenteService.findByUsername(username); // Modifica qui
+        Optional<Utente> utenteOptional = utenteService.findByUsername(username);
         if (utenteOptional.isEmpty()) {
             return ResponseEntity.notFound().build();
         }
@@ -60,7 +60,7 @@ public class PrenotazioneController {
 
 
 
-    @DeleteMapping("/me/{id}")
+    @DeleteMapping("/myreservation/{id}")
     public ResponseEntity<Void> deleteCurrentUserPrenotazione(@PathVariable Long id) {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         String username = authentication.getName();
